@@ -1,8 +1,8 @@
 ---
 title: "My First Post"
 date: 2022-01-30T23:13:32+01:00
-draft: false
+tags: ["security"]
+categories: ["Blog"]
 ---
 
-
-Hej hej hallå
+Hej hej hallå! Här kommer det snart stå massa smarta saker om IT-säkerhet
