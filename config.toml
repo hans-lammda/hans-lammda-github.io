@@ -1,0 +1,35 @@
+baseURL = 'http://lammda.se'
+languageCode = 'en-us'
+title = 'Lammda.se'
+theme = "beautifulhugo"
+
+[Params]
+  homeTitle = "Lammda"
+  subtitle = "i'm quite many jordsurr, fatta!"
+  mainSections = ["post","posts"]
+  logo = "https://avatars.githubusercontent.com/u/98047398?v=4"
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  readingTime = true
+  wordCount = true
+  socialShare = true
+  showRelatedPosts = true
+
+[Author]
+  name = "Hans Thorsen Lamm"
+  website = "lammda.se"
+  email = "hans@lammda.se"
+  github = "hans-lammda"
+
+[[menu.main]]
+  identifier = "Blog"
+  name = "Blog"
+  url = "/categories/Blog"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "pages/about/"
+  weight = 2
