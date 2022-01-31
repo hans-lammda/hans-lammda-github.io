@@ -1,7 +1,7 @@
 ---
 title: About me
-subtitle: Here you can read about all my jordsnurrs
+subtitle: Msc ee LTH 
 comments: false
 ---
 
-Hello I'm Hans, fatta!
+Hello I'm Hans
