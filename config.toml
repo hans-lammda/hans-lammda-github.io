@@ -1,4 +1,4 @@
-baseURL = 'http://lammda.se'
+baseURL = 'https://lammda.se'
 languageCode = 'en-us'
 title = 'Lammda.se'
 theme = "beautifulhugo"
