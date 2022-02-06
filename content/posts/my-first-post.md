@@ -5,4 +5,4 @@ tags: ["security"]
 categories: ["Blog"]
 ---
 
-Hej hej hallå! Här kommer det snart stå massa smarta saker om IT-säkerhet
+This page is under construction
