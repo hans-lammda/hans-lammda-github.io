@@ -5,7 +5,7 @@ theme = "beautifulhugo"
 
 [Params]
   homeTitle = "Lammda"
-  subtitle = "i'm quite many jordsurr, fatta!"
+  subtitle = "Add subtitle in Params config.toml"
   mainSections = ["post","posts"]
   logo = "https://avatars.githubusercontent.com/u/98047398?v=4"
   favicon = "img/favicon.ico"
