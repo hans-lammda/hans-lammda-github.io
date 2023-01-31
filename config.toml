@@ -5,7 +5,7 @@ theme = "beautifulhugo"
 
 [Params]
   homeTitle = "Lammda"
-  subtitle = "Add subtitle in Params config.toml"
+  subtitle = "Lamm Consulting AB"
   mainSections = ["post","posts"]
   logo = "https://avatars.githubusercontent.com/u/98047398?v=4"
   favicon = "img/favicon.ico"
