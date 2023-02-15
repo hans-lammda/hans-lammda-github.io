@@ -4,7 +4,7 @@ subtitle: Msc ee LTH
 comments: false
 ---
 
-# Qoute  
+# Quote  
 
 > "What you do not understand,  you can not make secure" 
 
