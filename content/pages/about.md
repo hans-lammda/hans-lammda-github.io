@@ -4,20 +4,37 @@ subtitle: Msc ee LTH
 comments: false
 ---
 
-# Quute  
+# Qoute  
 
-> "What you do not understand you can not make secure"
+> "What you do not understand you can not make secure" 
 
-# Challenge 
-If the average software product contains 100 open source projects, and each project contains 1000 files the ambition to understand is a challenge. 
 
-# How
-## Eyeballs 
-With wide adoption of open source comes many eyeballs that review the code 
-## Automation 
-CI/CD built not only for deployment of software, but also for creating evidence of compliance 
-## Artifical intelligence 
-AI depends on data quality delivered from automation 
+ 
+The above statement comes with challenges. Lets assume 
+- One Products depends on ten components 
+- Components contains someone elses code ( FOSS project  ) 
+- Each component contains 100 Foss projects 
+- Each such project contains 1000 files 
+- Each file containss 1000 line of code 
+
+I am recently assigned to lead the security supply chain on behalf of  [Cybernode.se](https://cybernode.se)
+
+We cannot expect one individual to understand large software project we must collaberate 
+
+- Educate 
+- Automate 
+- Delegate 
+
+
+Very few people actually use the source code, instead binary versioned provided by aggregators such as 
+- Redhat 
+- Debian 
+- Suse 
+- Alpine 
+
+I contribute to open source with [Bom Resolver](https://bomresolver.io) enabling you to backtrack a binary to the project. 
+
+
 
 
 
