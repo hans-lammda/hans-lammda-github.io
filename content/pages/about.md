@@ -6,7 +6,7 @@ comments: false
 
 # Qoute  
 
-> "What you do not understand you can not make secure" 
+> "What you do not understand,  you can not make secure" 
 
 
  
@@ -26,13 +26,17 @@ We cannot expect one individual to understand large software project we must col
 - Delegate 
 
 
-Very few people actually use the source code, instead binary versioned provided by aggregators such as 
+Very few people actually use the actual source code, instead the use the binary version provided by aggregators such as 
 - Redhat 
 - Debian 
 - Suse 
 - Alpine 
 
-I contribute to open source with [Bom Resolver](https://bomresolver.io) enabling you to backtrack a binary to the project. 
+I contribute to open source with [Bom Resolver](https://bomresolver.io) enabling you to backtrack a binary via tools all the way to the project hosting the actual source. 
+
+Starting from the binary the complete and final SBOM could then be used to retrieve all source for rebuilding the binary. 
+
+
 
 
 
