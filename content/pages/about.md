@@ -15,7 +15,7 @@ The above statement comes with challenges. Lets assume
 - Components contains someone elses code ( FOSS project  ) 
 - Each component contains 100 Foss projects 
 - Each such project contains 1000 files 
-- Each file containss 1000 line of code 
+- Each file contains 1000 line of code 
 
 I am recently assigned to lead the security supply chain on behalf of  [Cybernode.se](https://cybernode.se)
 
