@@ -1,0 +1,50 @@
+baseurl = "https://lammda.se/"
+contentdir    = "content"
+layoutdir     = "layouts"
+publishdir    = "docs"
+title = "Lamm Consulting AB "
+canonifyurls  = true
+
+DefaultContentLanguage = "en"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = true
+pygmentCodeFences = true
+
+[Params]
+  subtitle = "SBOM for isolated rebuild of Alpine packages"
+  logo = "img/avatar-icon.png"
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = false
+  comments = true
+
+
+[Author]
+  name = "Hans Thorsen Lamm"
+  email = "hans@lammda.se"
+  gitlab = "hans-lammda"
+  github = "hans-lammda"
+  linkedin = "hans-thorsen-b76411244/"
+
+
+[[menu.main]]
+    name = "Build"
+    url = "start/"
+    weight = 1
+
+[[menu.main]]
+    name = "SBOM"
+    url = "sbom/"
+    weight = 2
+
+[[menu.main]]
+    name = "Donations"
+    url = "donations/"
+    weight = 3
+
+[[menu.main]]
+    name = "Events"
+    url = "events/"
+    weight = 4

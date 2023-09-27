@@ -1,0 +1,42 @@
+download
+└── alpine
+    └── v3.16
+        ├── community
+        │   └── x86_64
+        │       └── APKINDEX.tar.gz
+        └── main
+            └── x86_64
+                ├── alpine-base-3.16.4-r0.apk
+                ├── alpine-baselayout-3.2.0-r23.apk
+                ├── alpine-baselayout-data-3.2.0-r23.apk
+                ├── alpine-conf-3.14.6-r1.apk
+                ├── alpine-keys-2.4-r1.apk
+                ├── APKINDEX.tar.gz
+                ├── apk-tools-2.12.9-r3.apk
+                ├── brotli-libs-1.0.9-r6.apk
+                ├── busybox-1.35.0-r17.apk
+                ├── busybox-initscripts-4.2-r0.apk
+                ├── busybox-suid-1.35.0-r17.apk
+                ├── ca-certificates-bundle-20220614-r0.apk
+                ├── gdbm-1.23-r0.apk
+                ├── ifupdown-ng-0.12.1-r0.apk
+                ├── libcrypto1.1-1.1.1t-r0.apk
+                ├── libc-utils-0.7.2-r3.apk
+                ├── libdbi-0.9.0-r0.apk
+                ├── libldap-2.6.3-r3.apk
+                ├── libsasl-2.1.28-r1.apk
+                ├── libssl1.1-1.1.1t-r0.apk
+                ├── lighttpd-1.4.64-r0.apk
+                ├── lighttpd-openrc-1.4.64-r0.apk
+                ├── lua5.4-libs-5.4.4-r5.apk
+                ├── mdev-conf-4.2-r0.apk
+                ├── musl-1.2.3-r2.apk
+                ├── musl-utils-1.2.3-r2.apk
+                ├── openrc-0.44.10-r7.apk
+                ├── pcre2-10.40-r0.apk
+                ├── scanelf-1.3.4-r0.apk
+                ├── ssl_client-1.35.0-r17.apk
+                ├── zlib-1.2.12-r3.apk
+                └── zstd-libs-1.5.2-r1.apk
+
+6 directories, 33 files
