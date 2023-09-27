@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Bom Resolver</title>
-    <link>https://bomresolver.io/categories/</link>
-    <description>Recent content in Categories on Bom Resolver</description>
+    <title>Categories on Lamm Consulting AB </title>
+    <link>https://lammda.se/categories/</link>
+    <description>Recent content in Categories on Lamm Consulting AB </description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hans@lammda.se (Hans Thorsen Lamm)</managingEditor>
-    <webMaster>hans@lammda.se (Hans Thorsen Lamm)</webMaster><atom:link href="https://bomresolver.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <webMaster>hans@lammda.se (Hans Thorsen Lamm)</webMaster><atom:link href="https://lammda.se/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

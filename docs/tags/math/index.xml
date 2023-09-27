@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>math on Bom Resolver</title>
-    <link>https://bomresolver.io/tags/math/</link>
-    <description>Recent content in math on Bom Resolver</description>
+    <title>math on Lamm Consulting AB </title>
+    <link>https://lammda.se/tags/math/</link>
+    <description>Recent content in math on Lamm Consulting AB </description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hans@lammda.se (Hans Thorsen Lamm)</managingEditor>
     <webMaster>hans@lammda.se (Hans Thorsen Lamm)</webMaster>
-    <lastBuildDate>Sun, 05 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://bomresolver.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://lammda.se/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Math Sample</title>
-      <link>https://bomresolver.io/post/2017-03-05-math-sample/</link>
+      <link>https://lammda.se/post/2017-03-05-math-sample/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
       <author>hans@lammda.se (Hans Thorsen Lamm)</author>
-      <guid>https://bomresolver.io/post/2017-03-05-math-sample/</guid>
+      <guid>https://lammda.se/post/2017-03-05-math-sample/</guid>
       <description>&lt;p&gt;KaTeX can be used to generate complex math formulas. It supports in-line math using the &lt;code&gt;\\( ... \\)&lt;/code&gt; delimiters, like this: \( E = mc^2 \). By default, it does &lt;em&gt;not&lt;/em&gt; support in-line delimiters &lt;code&gt;$...$&lt;/code&gt; because those occur too commonly in typical webpages. It supports displayed math using the &lt;code&gt;$$&lt;/code&gt; or &lt;code&gt;\\[...\\]&lt;/code&gt; delimiters, like this:&lt;/p&gt;
 &lt;p&gt;Formula 1:
 $$
