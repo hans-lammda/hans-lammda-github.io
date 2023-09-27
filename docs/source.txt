@@ -1,0 +1,279 @@
+source/
+└── repo
+    └── main
+        ├── alpine-base
+        │   └── APKBUILD
+        ├── alpine-baselayout
+        │   ├── aliases.conf
+        │   ├── alpine-baselayout.post-install
+        │   ├── alpine-baselayout.post-upgrade
+        │   ├── alpine-baselayout.pre-install
+        │   ├── alpine-baselayout.pre-upgrade
+        │   ├── APKBUILD
+        │   ├── blacklist.conf
+        │   ├── color_prompt.sh.disabled
+        │   ├── crontab
+        │   ├── group
+        │   ├── i386.conf
+        │   ├── inittab
+        │   ├── kms.conf
+        │   ├── locale.sh
+        │   ├── mkmntdirs.c
+        │   ├── passwd
+        │   ├── profile
+        │   ├── protocols-6.2
+        │   └── services-6.2
+        ├── alpine-conf
+        │   ├── 0001-setup-disk-fix-boot-size-for-UEFI-and-encryption.patch
+        │   ├── alpine-conf-3.14.6.tar.gz
+        │   └── APKBUILD
+        ├── apk-tools
+        │   ├── _apk
+        │   ├── APKBUILD
+        │   └── apk-tools-v2.12.9.tar.gz
+        ├── brotli
+        │   ├── 0545759b2ed9b69e3f21fd0ac954bee78f3104b6.patch
+        │   ├── 838.patch
+        │   ├── APKBUILD
+        │   ├── brotli-1.0.9.tar.gz
+        │   ├── build-tool-against-shared-lib.patch
+        │   └── optimize-mips-s390x.patch
+        ├── busybox
+        │   ├── 0001-adduser-default-to-sbin-nologin-as-shell-for-system-.patch
+        │   ├── 0001-ash-add-built-in-BB_ASH_VERSION-variable.patch
+        │   ├── 0001-avoid-redefined-warnings-when-building-with-utmps.patch
+        │   ├── 0001-libbb-sockaddr2str-ensure-only-printable-characters-.patch
+        │   ├── 0001-modinfo-add-k-option-for-kernel-version.patch
+        │   ├── 0001-modutils-check-ELF-header-before-calling-finit_module.patch
+        │   ├── 0001-nologin-Install-applet-to-sbin-instead-of-usr-sbin.patch
+        │   ├── 0001-pgrep-add-support-for-matching-against-UID-and-RUID.patch
+        │   ├── 0001-properly-fix-wget-https-support.patch
+        │   ├── 0002-fsck-resolve-LABEL-.-UUID-.-spec-to-device.patch
+        │   ├── 0002-nslookup-sanitize-all-printed-strings-with-printable.patch
+        │   ├── 0003-ash-exec-busybox.static.patch
+        │   ├── 0004-app-location-for-cpio-vi-and-lspci.patch
+        │   ├── 0005-udhcpc-set-default-discover-retries-to-5.patch
+        │   ├── 0006-ping-make-ping-work-without-root-privileges.patch
+        │   ├── 0007-fbsplash-support-console-switching.patch
+        │   ├── 0008-fbsplash-support-image-and-bar-alignment-and-positio.patch
+        │   ├── 0009-depmod-support-generating-kmod-binary-index-files.patch
+        │   ├── 0010-Add-flag-for-not-following-symlinks-when-recursing.patch
+        │   ├── 0012-udhcpc-Don-t-background-if-n-is-given.patch
+        │   ├── 0013-ash-fix-unsafe-use-of-mempcpy.patch
+        │   ├── 0014-ash-fix-use-after-free-in-bash-pattern-substitution.patch
+        │   ├── 0015-ed-don-t-use-memcpy-with-overlapping-memory-regions.patch
+        │   ├── 0016-ash-don-t-read-past-end-of-var-in-subvareval-for-bas.patch
+        │   ├── 0017-ash-Fix-use-after-free-on-idx-variable.patch
+        │   ├── acpid.logrotate
+        │   ├── APKBUILD
+        │   ├── bbsuid.c
+        │   ├── busybox-1.35.0.tar.bz2
+        │   ├── busyboxconfig
+        │   ├── busyboxconfig-extras
+        │   ├── busybox-extras.post-install
+        │   ├── busybox-extras.pre-deinstall
+        │   ├── busybox.post-install
+        │   ├── busybox.post-upgrade
+        │   ├── busybox.trigger
+        │   ├── CVE-2022-30065.patch
+        │   ├── dad.if-up
+        │   ├── default.script
+        │   ├── ssl_client.c
+        │   ├── test-fix-tarball-creation.patch
+        │   └── test-timezone-workaround.patch
+        ├── busybox-initscripts
+        │   ├── acpid.initd
+        │   ├── APKBUILD
+        │   ├── busybox-initscripts.post-install
+        │   ├── busybox-initscripts.post-upgrade
+        │   ├── crond.confd
+        │   ├── crond.initd
+        │   ├── dnsd.initd
+        │   ├── dvbdev
+        │   ├── httpd.initd
+        │   ├── inetd.initd
+        │   ├── klogd.confd
+        │   ├── klogd.initd
+        │   ├── Kyuafile
+        │   ├── loadkmap.confd
+        │   ├── loadkmap.initd
+        │   ├── mdev.conf
+        │   ├── mdev.initd
+        │   ├── ntpd.confd
+        │   ├── ntpd.initd
+        │   ├── persistent-storage
+        │   ├── persistent-storage_test
+        │   ├── ptpdev
+        │   ├── ptpdev_test
+        │   ├── rdate.confd
+        │   ├── rdate.initd
+        │   ├── syslog.confd
+        │   ├── syslog.initd
+        │   ├── test_env.sh
+        │   ├── udhcpd.initd
+        │   ├── usbdev
+        │   ├── watchdog.confd
+        │   └── watchdog.initd
+        ├── cyrus-sasl
+        │   ├── APKBUILD
+        │   ├── cyrus-sasl-2.1.28.tar.gz
+        │   └── saslauthd.initd
+        ├── e2fsprogs
+        │   ├── APKBUILD
+        │   └── e2fsprogs-1.46.5.tar.gz
+        ├── gdbm
+        │   ├── APKBUILD
+        │   └── gdbm-1.23.tar.gz
+        ├── heimdal
+        │   ├── 005_all_heimdal-suid_fix.patch
+        │   ├── APKBUILD
+        │   ├── CVE-2018-16860.patch
+        │   ├── CVE-2022-45142.patch
+        │   ├── heimdal-7.7.1.tar.gz
+        │   ├── heimdal-kadmind.initd
+        │   ├── heimdal-kdc.initd
+        │   ├── heimdal-kpasswdd.initd
+        │   └── heimdal_missing-include.patch
+        ├── ifupdown-ng
+        │   ├── APKBUILD
+        │   └── ifupdown-ng-0.12.1.tar.xz
+        ├── libcap-ng
+        │   ├── APKBUILD
+        │   ├── apply-disable.patch
+        │   └── libcap-ng-0.8.3.tar.gz
+        ├── libdbi
+        │   ├── APKBUILD
+        │   └── libdbi-0.9.0.tar.gz
+        ├── libeconf
+        │   ├── APKBUILD
+        │   ├── libeconf-0.4.4.tar.gz
+        │   └── musl-tests.patch
+        ├── libtool
+        │   ├── APKBUILD
+        │   ├── libtool-2.4.7.tar.gz
+        │   └── libtool-fix-cross-compile.patch
+        ├── lighttpd
+        │   ├── APKBUILD
+        │   ├── lighttpd-1.4.64.tar.xz
+        │   ├── lighttpd.conf
+        │   ├── lighttpd.confd
+        │   ├── lighttpd.initd
+        │   ├── lighttpd.logrotate
+        │   ├── lighttpd.pre-install
+        │   ├── lighttpd.pre-upgrade
+        │   ├── mime-types.conf
+        │   ├── mod_cgi.conf
+        │   ├── mod_fastcgi.conf
+        │   └── mod_fastcgi_fpm.conf
+        ├── lua5.4
+        │   ├── APKBUILD
+        │   ├── CVE-2022-28805.patch
+        │   ├── extern-c-for-cpp.patch
+        │   ├── fix-double-free.patch
+        │   ├── lua-5.4.4.tar.gz
+        │   ├── lua-5.4-make.patch
+        │   ├── lua-5.4-module_paths.patch
+        │   └── lua5.4.pc
+        ├── musl
+        │   ├── APKBUILD
+        │   ├── getconf.c
+        │   ├── getent.c
+        │   ├── handle-aux-at_base.patch
+        │   ├── iconv.c
+        │   ├── ldconfig
+        │   ├── musl-v1.2.3.tar.gz
+        │   ├── relr-1.patch
+        │   ├── relr-2.patch
+        │   ├── relr-3.patch
+        │   ├── relr-4.patch
+        │   └── __stack_chk_fail_local.c
+        ├── ncurses
+        │   ├── APKBUILD
+        │   └── ncurses-$pkgver
+        │       └── _p
+        │           └── -.tgz
+        ├── openldap
+        │   ├── 0007-Use-correct-extension-for-slapd-modules.patch
+        │   ├── 0008-Remove-pidfile-and-argsfile.patch
+        │   ├── 0009-Include-more-schemas-in-default-config.patch
+        │   ├── APKBUILD
+        │   ├── cacheflush.patch
+        │   ├── fix-lloadd-tests.patch
+        │   ├── fix-manpages.patch
+        │   ├── lloadd.conf
+        │   ├── lloadd.confd
+        │   ├── lloadd.initd
+        │   ├── openldap-2.4.11-libldap_r.patch
+        │   ├── openldap-2.4-ppolicy.patch
+        │   ├── openldap-2.6.3.tgz
+        │   ├── openldap-lloadd.pre-install
+        │   ├── openldap-mqtt-overlay.patch
+        │   ├── openldap.post-install
+        │   ├── openldap.post-upgrade
+        │   ├── openldap.pre-install
+        │   ├── openldap.pre-upgrade
+        │   ├── slapd.confd
+        │   └── slapd.initd
+        ├── openrc
+        │   ├── 0001-call-sbin-mkmntdirs-in-localmount-OpenRC-service.patch
+        │   ├── 0002-fsck-don-t-add-C0-to-busybox-fsck.patch
+        │   ├── 0003-rc-pull-in-sysinit-and-boot-as-stacked-levels-when-n.patch
+        │   ├── 0004-make-consolefont-service-compatible-with-busyboxs-se.patch
+        │   ├── 0005-Support-early-loading-of-keymap-if-kbd-is-installed.patch
+        │   ├── 0006-Add-support-for-starting-services-in-a-specified-VRF.patch
+        │   ├── 0007-Clean-up-staticroute-config-remove-irrelevant-parts-.patch
+        │   ├── 0008-bootmisc-switch-wipe_tmp-setting-to-no-by-default.patch
+        │   ├── 0009-fix-bootmisc-mv-error.patch
+        │   ├── 0010-noexec-devfs.patch
+        │   ├── APKBUILD
+        │   ├── firstboot.initd
+        │   ├── hostname.initd
+        │   ├── hwdrivers.initd
+        │   ├── machine-id.initd
+        │   ├── modloop.confd
+        │   ├── modloop.initd
+        │   ├── modules.initd
+        │   ├── networking.initd
+        │   ├── openrc-0.44.10.tar.gz
+        │   ├── openrc.logrotate
+        │   ├── openrc.post-install
+        │   ├── openrc.post-upgrade
+        │   ├── seedrng.patch
+        │   ├── sysctl.initd
+        │   ├── sysfsconf.initd
+        │   └── test-networking.sh
+        ├── openssl
+        │   ├── APKBUILD
+        │   ├── man-section.patch
+        │   ├── openssl-1.1.1t.tar.gz
+        │   └── ppc64.patch
+        ├── pcre2
+        │   ├── APKBUILD
+        │   └── pcre2-10.40.tar.bz2
+        ├── readline
+        │   ├── APKBUILD
+        │   ├── fix-ncurses-underlinking.patch
+        │   ├── inputrc
+        │   └── readline-8.1.tar.gz
+        ├── util-linux
+        │   ├── APKBUILD
+        │   ├── login.pamd
+        │   ├── rfkill.confd
+        │   ├── rfkill.initd
+        │   ├── ttydefaults.h
+        │   ├── util-linux-2.38.tar.xz
+        │   └── utmps.patch
+        ├── zlib
+        │   ├── APKBUILD
+        │   ├── configure-Pass-LDFLAGS-to-link-tests.patch
+        │   ├── crc32.patch
+        │   ├── Fix-CC-logic-in-configure.patch
+        │   ├── zlib-1.2.12.tar.gz
+        │   ├── zlib-CVE-2022-37434-bugfix.patch
+        │   └── zlib-CVE-2022-37434.patch
+        └── zstd
+            ├── APKBUILD
+            ├── disable-valgrind-test.patch
+            └── zstd-1.5.2.tar.gz
+
+32 directories, 244 files

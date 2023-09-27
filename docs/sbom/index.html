@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Bom Resolver</title>
+  <meta property="og:title" content="Bom Resolver" />
+  <meta name="twitter:title" content="Bom Resolver" />
+  <meta name="description" content="SBOM The project comes with a reference suite, providing a simple static webserver.
+Desired SBOM Just add two lines
+alpine-base lighttpd #S The two packages have several dependencies that originates how Alpine compile the source code
+./configure --with-ldap --with-openssl --with-zstd --with-brotli --with-lua To get all transitive dependencies according to CISA. iteration start until the resolver reports true.
+Each iteration reports packages to be added to the desired SBOM. In this example four passes are required.">
+  <meta property="og:description" content="SBOM The project comes with a reference suite, providing a simple static webserver.
+Desired SBOM Just add two lines
+alpine-base lighttpd #S The two packages have several dependencies that originates how Alpine compile the source code
+./configure --with-ldap --with-openssl --with-zstd --with-brotli --with-lua To get all transitive dependencies according to CISA. iteration start until the resolver reports true.
+Each iteration reports packages to be added to the desired SBOM. In this example four passes are required.">
+  <meta name="twitter:description" content="SBOM The project comes with a reference suite, providing a simple static webserver.
+Desired SBOM Just add two lines
+alpine-base lighttpd #S The two packages have several dependencies that originates …">
+  <meta name="author" content="Hans Thorsen Lamm"/>
+  <link href='https://bomresolver.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://bomresolver.io/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://bomresolver.io/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://bomresolver.io/sbom/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bom Resolver" />
+
+  <meta name="generator" content="Hugo 0.92.2" />
+  <link rel="canonical" href="https://bomresolver.io/sbom/" />
+  <link rel="alternate" href="https://bomresolver.io/index.xml" type="application/rss+xml" title="Bom Resolver">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://bomresolver.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://bomresolver.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://bomresolver.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://bomresolver.io/">Bom Resolver</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Build" href="https://bomresolver.io/start/">Build</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="SBOM" href="https://bomresolver.io/sbom/">SBOM</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Donations" href="https://bomresolver.io/donations/">Donations</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Events" href="https://bomresolver.io/events/">Events</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Bom Resolver" href="https://bomresolver.io/">
+            <img class="avatar-img" src="https://bomresolver.io/img/avatar-icon.png" alt="Bom Resolver" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Bom Resolver</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h1 id="sbom">SBOM</h1>
+<p>The project comes with a reference suite, providing a simple static webserver.</p>
+<h2 id="desired-sbom">Desired SBOM</h2>
+<p>Just add two lines</p>
+<pre tabindex="0"><code>alpine-base
+lighttpd #S
+</code></pre><p>The two packages have several dependencies that originates how Alpine compile the source code</p>
+<pre tabindex="0"><code>./configure --with-ldap --with-openssl --with-zstd --with-brotli --with-lua
+
+</code></pre><p>To get all transitive dependencies according to <a href="https://www.cisa.gov/sites/default/files/publications/Dec15-SBOM-a-rama-slides.pdf">CISA</a>.  iteration start until the resolver reports true.</p>
+<p>Each iteration reports packages to be added to the desired SBOM. In this example four passes are required.</p>
+<pre tabindex="0"><code># 
+# This is the reference image 
+#
+alpine-base
+
+lighttpd #S
+
+# Pass 1 
+
+openssl
+brotli
+openldap
+lua5.4
+zstd
+
+# Pass 2
+
+ncurses
+libtool
+cyrus-sasl
+util-linux
+
+# Pass 3
+
+heimdal
+
+# Pass 4
+
+e2fsprogs
+</code></pre><p>The APKBUILD for lighttpd could be modified to exclude dependencies  For deployment in Kubernetes TLS is handled in api gateways/sidecar.</p>
+<p>For deployment as standalone ldap and openssl may be needed. ECO systems with pre-compiled packages suites many use cases, but is not optimized for one specific.</p>
+<p>Bom Resolver enables to start prototyping with existing packages and then customize to meet the requirements.</p>
+<pre tabindex="0"><code>./configure 
+
+</code></pre><h2 id="software-composition">Software composition</h2>
+<p>Aggregations split large projects into smaller packages</p>
+<ul>
+<li>commands</li>
+<li>services</li>
+<li>libraries</li>
+<li>headers for development</li>
+<li>documentation</li>
+</ul>
+<p>Format reports which library orginates from which package. This is useful for triage handling of vulnerabilities and also hardening.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json">            <span class="s2">&#34;depends&#34;</span><span class="err">:</span> <span class="p">{</span>
+                            <span class="nt">&#34;develop&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&#34;libbrotlienc.so.1&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;brotli&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;child&#34;</span><span class="p">:</span> <span class="s2">&#34;brotli-libs&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;libc.musl-x86_64.so.1&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;musl&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;libcrypto.so.1.1&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;openssl&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;child&#34;</span><span class="p">:</span> <span class="s2">&#34;libcrypto1.1&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;libdbi.so.1&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;libdbi&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;liblber.so.2&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;openldap&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;child&#34;</span><span class="p">:</span> <span class="s2">&#34;libldap&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;libldap.so.2&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;openldap&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;child&#34;</span><span class="p">:</span> <span class="s2">&#34;libldap&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;liblua-5.4.so.0&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;lua5.4&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;child&#34;</span><span class="p">:</span> <span class="s2">&#34;lua5.4-libs&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;libpcre2-8.so.0&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;pcre2&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;libssl.so.1.1&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;openssl&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;child&#34;</span><span class="p">:</span> <span class="s2">&#34;libssl1.1&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;libz.so.1&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;zlib&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;libzstd.so.1&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;parent&#34;</span><span class="p">:</span> <span class="s2">&#34;zstd&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;child&#34;</span><span class="p">:</span> <span class="s2">&#34;zstd-libs&#34;</span>
+                                <span class="p">}</span>
+                            <span class="p">},</span>
+
+</code></pre></div><h2 id="source-code">Source code</h2>
+<p>The metadata is used for rebuild in isolation, therefore two locations are required.</p>
+<ul>
+<li>Location on Internet</li>
+<li>Where to store software for rebuild</li>
+</ul>
+<p>The aggregation model supports vendor specific patches and local files not contributed to the upstream project.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;source&#34;</span><span class="err">:</span> <span class="p">{</span>
+                    <span class="nt">&#34;external&#34;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&#34;patch&#34;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&#34;code&#34;</span><span class="p">:</span> <span class="p">[</span>
+                            <span class="p">{</span>
+                                <span class="nt">&#34;remote&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;generic&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.64.tar.xz&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;local&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;file&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;main/lighttpd/lighttpd-1.4.64.tar.xz&#34;</span>
+                                <span class="p">}</span>
+                            <span class="p">}</span>
+                        <span class="p">]</span>
+                    <span class="p">},</span>
+                    <span class="nt">&#34;internal&#34;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&#34;code&#34;</span><span class="p">:</span> <span class="p">[</span>
+                            <span class="p">{</span>
+                                <span class="nt">&#34;remote&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;git&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;commit&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                        <span class="nt">&#34;hash&#34;</span><span class="p">:</span> <span class="s2">&#34;1016b47723&#34;</span><span class="p">,</span>
+                                        <span class="nt">&#34;tag&#34;</span><span class="p">:</span> <span class="s2">&#34;v3.16.3&#34;</span>
+                                    <span class="p">},</span>
+                                    <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;git://git.alpinelinux.org/aports&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;main/lighttpd/lighttpd.pre-install&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;local&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;file&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;main/lighttpd/lighttpd.pre-install&#34;</span>
+                                <span class="p">}</span>
+                            <span class="p">},</span>
+                            <span class="p">{</span>
+                                <span class="nt">&#34;remote&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;git&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;commit&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                        <span class="nt">&#34;hash&#34;</span><span class="p">:</span> <span class="s2">&#34;1016b47723&#34;</span><span class="p">,</span>
+                                        <span class="nt">&#34;tag&#34;</span><span class="p">:</span> <span class="s2">&#34;v3.16.3&#34;</span>
+                                    <span class="p">},</span>
+                                    <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;git://git.alpinelinux.org/aports&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;main/lighttpd/lighttpd.pre-upgrade&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;local&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;file&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;main/lighttpd/lighttpd.pre-upgrade&#34;</span>
+                                <span class="p">}</span>
+                            <span class="p">},</span>
+                            <span class="p">{</span>
+                                <span class="nt">&#34;remote&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;git&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;commit&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                        <span class="nt">&#34;hash&#34;</span><span class="p">:</span> <span class="s2">&#34;1016b47723&#34;</span><span class="p">,</span>
+                                        <span class="nt">&#34;tag&#34;</span><span class="p">:</span> <span class="s2">&#34;v3.16.3&#34;</span>
+                                    <span class="p">},</span>
+                                    <span class="nt">&#34;url&#34;</span><span class="p">:</span> <span class="s2">&#34;git://git.alpinelinux.org/aports&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;main/lighttpd/lighttpd.initd&#34;</span>
+                                <span class="p">},</span>
+                                <span class="nt">&#34;local&#34;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;file&#34;</span><span class="p">,</span>
+                                    <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;main/lighttpd/lighttpd.initd&#34;</span>
+                                <span class="p">}</span>
+                            <span class="p">},</span>
+
+</code></pre></div><h1 id="source-code-1">Source code</h1>
+<p>Bom resolver downloads all source code required to re-build, enabling complete scanning of code, contributions and patches.</p>
+<pre tabindex="0"><code>        ├── lighttpd
+        │   ├── APKBUILD
+        │   ├── lighttpd-1.4.64.tar.xz
+        │   ├── lighttpd.conf
+        │   ├── lighttpd.confd
+        │   ├── lighttpd.initd
+        │   ├── lighttpd.logrotate
+        │   ├── lighttpd.pre-install
+        │   ├── lighttpd.pre-upgrade
+        │   ├── mime-types.conf
+        │   ├── mod_cgi.conf
+        │   ├── mod_fastcgi.conf
+        │   └── mod_fastcgi_fpm.conf
+
+</code></pre><h2 id="vulnerabilities">Vulnerabilities</h2>
+<p>For each release, all security fixes are listed in the APKBUILD</p>
+<pre tabindex="0"><code># secfixes:
+#   1.4.64-r0:
+#     - CVE-2022-22707
+
+
+</code></pre><p>This information is extracted and added to the complete SBOM.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;secfixes&#34;</span><span class="err">:</span> <span class="p">{</span>
+                        <span class="nt">&#34;secfixes&#34;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="nt">&#34;1.4.64-r0&#34;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="s2">&#34;CVE-2022-22707&#34;</span>
+                            <span class="p">]</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+</code></pre></div><h2 id="licenses">Licenses</h2>
+<p>Combined with the software composition information, the legal impact could be analyzed in the right context.</p>
+<ul>
+<li>Is there any business critical internal code linked against a restrictive license ?</li>
+<li>Is this the software used as a command only ?</li>
+<li>Any patches applied during the build process ?</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json">  <span class="p">{</span>
+  <span class="nt">&#34;license&#34;</span><span class="p">:</span> <span class="s2">&#34;BSD-3-Clause&#34;</span>
+  <span class="p">}</span>
+</code></pre></div><h1 id="providence">Providence</h1>
+<p>The output could be further checked against <a href="https://osskb.org/">OSSKB</a></p>
+<p>Below lighttpd version 1.4..67 contains the core file ( server.c ) with hash 03a1d48410609b2bbd1ef7f01518e8f3</p>
+<p>that is used by other linux vendors such as</p>
+<ul>
+<li>fedora</li>
+<li>opensuse</li>
+<li>redhat</li>
+<li>debian</li>
+</ul>
+<p>This information is not needed for rebuild, but for legal and security analyze it contain usefule information</p>
+<p>There are also other services that gather commit history. Commit id connected to users could also be checked against social media to find more about the contributer</p>
+<pre tabindex="0"><code># unpack the source package and then create fingerprint for everything inside lighttpd-1.4.64.tar.xz
+
+
+src/server.c&quot;: [
+    {
+      &quot;component&quot;: &quot;lighttpd1.4&quot;,
+      &quot;file&quot;: &quot;server.c&quot;,
+      &quot;file_hash&quot;: &quot;03a1d48410609b2bbd1ef7f01518e8f3&quot;,
+      &quot;file_url&quot;: &quot;https://osskb.org/api/file_contents/03a1d48410609b2bbd1ef7f01518e8f3&quot;,
+      &quot;id&quot;: &quot;file&quot;,
+      &quot;latest&quot;: &quot;1.4.67&quot;,
+      &quot;licenses&quot;: [
+        {
+          &quot;checklist_url&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-3-Clause.txt&quot;,
+          &quot;copyleft&quot;: &quot;no&quot;,
+          &quot;name&quot;: &quot;BSD-3-Clause&quot;,
+          &quot;osadl_updated&quot;: &quot;2023-01-09T15:58:00+00:00&quot;,
+          &quot;patent_hints&quot;: &quot;no&quot;,
+          &quot;source&quot;: &quot;component_declared&quot;,
+          &quot;url&quot;: &quot;https://spdx.org/licenses/BSD-3-Clause.html&quot;
+        },
+        {
+          &quot;checklist_url&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt&quot;,
+          &quot;copyleft&quot;: &quot;no&quot;,
+          &quot;name&quot;: &quot;MIT&quot;,
+          &quot;osadl_updated&quot;: &quot;2023-01-09T15:58:00+00:00&quot;,
+          &quot;patent_hints&quot;: &quot;no&quot;,
+          &quot;source&quot;: &quot;license_file&quot;,
+          &quot;url&quot;: &quot;https://spdx.org/licenses/MIT.html&quot;
+        },
+        {
+          &quot;checklist_url&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-3-Clause.txt&quot;,
+          &quot;copyleft&quot;: &quot;no&quot;,
+          &quot;name&quot;: &quot;BSD-3-Clause&quot;,
+          &quot;osadl_updated&quot;: &quot;2023-01-09T15:58:00+00:00&quot;,
+          &quot;patent_hints&quot;: &quot;no&quot;,
+          &quot;source&quot;: &quot;license_file&quot;,
+          &quot;url&quot;: &quot;https://spdx.org/licenses/BSD-3-Clause.html&quot;
+        },
+        {
+          &quot;checklist_url&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-3-Clause.txt&quot;,
+          &quot;copyleft&quot;: &quot;no&quot;,
+          &quot;name&quot;: &quot;BSD-3-Clause&quot;,
+          &quot;osadl_updated&quot;: &quot;2023-01-09T15:58:00+00:00&quot;,
+          &quot;patent_hints&quot;: &quot;no&quot;,
+          &quot;source&quot;: &quot;scancode&quot;,
+          &quot;url&quot;: &quot;https://spdx.org/licenses/BSD-3-Clause.html&quot;
+        }
+      ],
+      &quot;lines&quot;: &quot;all&quot;,
+      &quot;matched&quot;: &quot;100%&quot;,
+      &quot;oss_lines&quot;: &quot;all&quot;,
+      &quot;purl&quot;: [
+        &quot;pkg:github/lighttpd/lighttpd1.4&quot;,
+        &quot;pkg:rpm/fedora/lighttpd&quot;,
+        &quot;pkg:rpm/opensuse/lighttpd&quot;,
+        &quot;pkg:deb/debian/lighttpd&quot;,
+        &quot;pkg:deb/ubuntu/lighttpd&quot;,
+        &quot;pkg:github/lighttpd/lighttpd2&quot;
+      ],
+      &quot;release_date&quot;: &quot;2022-08-07&quot;,
+      &quot;server&quot;: {
+        &quot;kb_version&quot;: {
+          &quot;daily&quot;: &quot;23.02.08&quot;,
+          &quot;monthly&quot;: &quot;23.01&quot;
+        },
+        &quot;version&quot;: &quot;5.2.3&quot;
+      },
+      &quot;source_hash&quot;: &quot;03a1d48410609b2bbd1ef7f01518e8f3&quot;,
+      &quot;status&quot;: &quot;pending&quot;,
+      &quot;url&quot;: &quot;https://github.com/lighttpd/lighttpd1.4&quot;,
+      &quot;url_hash&quot;: &quot;691da43b083dfe143df300a09b88f2fc&quot;,
+      &quot;vendor&quot;: &quot;lighttpd&quot;,
+      &quot;version&quot;: &quot;lighttpd-1.4.66&quot;
+    }
+  ],
+
+</code></pre><p>The source code is hosted on <a href="https://github.com/Nordix/bomres">Github</a>.</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://bomresolver.io/start/" data-toggle="tooltip" data-placement="top" title="Bom Resolver">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://bomresolver.io/events/" data-toggle="tooltip" data-placement="top" title="Bom Resolver">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:hans@lammda.se" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/hans-lammda" title="GitLab">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/hans-lammda" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/hans-thorsen-b76411244/" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Hans Thorsen Lamm
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://bomresolver.io/">Bom Resolver</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.92.2</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://bomresolver.io/js/main.js"></script>
+<script src="https://bomresolver.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+

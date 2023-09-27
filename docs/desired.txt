@@ -1,0 +1,9 @@
+# 
+# This is the desired list of Alpine packages 
+#   
+#  The trailing #S indicates that this package is important. 
+#
+alpine-base
+
+lighttpd #S
+

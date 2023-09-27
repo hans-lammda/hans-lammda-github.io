@@ -1,0 +1,1667 @@
+{
+    "dependencies": [
+        {
+            "ID": "native-alpine-baselayout-data-3.2.0-r23-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "alpine-baselayout-data",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "3.2.0",
+                "update": "r23",
+                "pkgrel": "23",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "3.2.0",
+                        "pkgrel": "23",
+                        "arch": "x86_64",
+                        "parent": "alpine-baselayout",
+                        "commit": "348653a9ba0701e8e968b3344e72313a9ef334e4",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [],
+                            "depend": []
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {},
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-musl-1.2.3-r2-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "musl",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.2.3",
+                "update": "r2",
+                "pkgrel": "2",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "musl-dbg",
+                            "libc6-compat",
+                            "musl-dev",
+                            "musl-libintl",
+                            "musl-utils"
+                        ],
+                        "pkgver": "1.2.3",
+                        "pkgrel": "2",
+                        "arch": "x86_64",
+                        "parent": "musl",
+                        "commit": "9bb1c89d8ef20e9a69fea9ac7035a01deb27d680",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libc.musl-x86_64.so.1=1"
+                            ],
+                            "depend": []
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {},
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-busybox-1.35.0-r17-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "busybox",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.35.0",
+                "update": "r17",
+                "pkgrel": "17",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "busybox-suid",
+                            "busybox-doc",
+                            "busybox-ifupdown",
+                            "busybox-static",
+                            "busybox-extras",
+                            "ssl_client"
+                        ],
+                        "pkgver": "1.35.0",
+                        "pkgrel": "17",
+                        "arch": "x86_64",
+                        "parent": "busybox",
+                        "commit": "2bf6ec48e526113f87216683cd341a78af5f0b3f",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "/bin/sh cmd:busybox=1.35.0-r17 cmd:sh=1.35.0-r17"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-alpine-baselayout-3.2.0-r23-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "alpine-baselayout",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "3.2.0",
+                "update": "r23",
+                "pkgrel": "23",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "alpine-baselayout-data"
+                        ],
+                        "pkgver": "3.2.0",
+                        "pkgrel": "23",
+                        "arch": "x86_64",
+                        "parent": "alpine-baselayout",
+                        "commit": "348653a9ba0701e8e968b3344e72313a9ef334e4",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "cmd:mkmntdirs=3.2.0-r23"
+                            ],
+                            "depend": [
+                                "alpine-baselayout-data=3.2.0-r23 /bin/sh so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-ifupdown-ng-0.12.1-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "ifupdown-ng",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "0.12.1",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "ifupdown-ng-wifi",
+                            "ifupdown-ng-doc",
+                            "ifupdown-ng-wireguard-quick",
+                            "ifupdown-ng-wireguard",
+                            "ifupdown-ng-ppp",
+                            "ifupdown-ng-batman",
+                            "ifupdown-ng-ethtool",
+                            "ifupdown-ng-iproute2"
+                        ],
+                        "pkgver": "0.12.1",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "ifupdown-ng",
+                        "commit": "faee15c84f5f6f1c51a1f3446b0d68a0f438602f",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "ifupdown-any cmd:ifctrstat=0.12.1-r0 cmd:ifdown=0.12.1-r0 cmd:ifparse=0.12.1-r0 cmd:ifquery=0.12.1-r0 cmd:ifup=0.12.1-r0 cmd:ifupdown=0.12.1-r0"
+                            ],
+                            "depend": [
+                                "!vlan so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-openrc-0.44.10-r7-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "openrc",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "0.44.10",
+                "update": "r7",
+                "pkgrel": "7",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "agetty-openrc",
+                            "openrc-doc",
+                            "openrc-dev",
+                            "openrc-bash-completion",
+                            "openrc-zsh-completion",
+                            "openrc-dbg"
+                        ],
+                        "pkgver": "0.44.10",
+                        "pkgrel": "7",
+                        "arch": "x86_64",
+                        "parent": "openrc",
+                        "commit": "823b101d15beab5e49f51d88be187f7f376485b7",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libeinfo.so.1=1 so:librc.so.1=1 cmd:openrc-run=0.44.10-r7 cmd:openrc=0.44.10-r7 cmd:rc-service=0.44.10-r7 cmd:rc-sstat=0.44.10-r7 cmd:rc-status=0.44.10-r7 cmd:rc-update=0.44.10-r7 cmd:rc=0.44.10-r7 cmd:service=0.44.10-r7 cmd:start-stop-daemon=0.44.10-r7 cmd:supervise-daemon=0.44.10-r7"
+                            ],
+                            "depend": [
+                                "ifupdown-any /bin/sh so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-alpine-conf-3.14.6-r1-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "alpine-conf",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "3.14.6",
+                "update": "r1",
+                "pkgrel": "1",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "3.14.6",
+                        "pkgrel": "1",
+                        "arch": "x86_64",
+                        "parent": "alpine-conf",
+                        "commit": "2acdfa21ca8d4a6ef1c138092091790c2127f564",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "cmd:copy-modloop=3.14.6-r1 cmd:lbu=3.14.6-r1 cmd:lbu_commit=3.14.6-r1 cmd:lbu_exclude=3.14.6-r1 cmd:lbu_include=3.14.6-r1 cmd:lbu_status=3.14.6-r1 cmd:lbu_update=3.14.6-r1 cmd:setup-acf=3.14.6-r1 cmd:setup-alpine=3.14.6-r1 cmd:setup-apkcache=3.14.6-r1 cmd:setup-apkrepos=3.14.6-r1 cmd:setup-bootable=3.14.6-r1 cmd:setup-desktop=3.14.6-r1 cmd:setup-devd=3.14.6-r1 cmd:setup-disk=3.14.6-r1 cmd:setup-dns=3.14.6-r1 cmd:setup-hostname=3.14.6-r1 cmd:setup-interfaces=3.14.6-r1 cmd:setup-keymap=3.14.6-r1 cmd:setup-lbu=3.14.6-r1 cmd:setup-mta=3.14.6-r1 cmd:setup-ntp=3.14.6-r1 cmd:setup-proxy=3.14.6-r1 cmd:setup-sshd=3.14.6-r1 cmd:setup-timezone=3.14.6-r1 cmd:setup-user=3.14.6-r1 cmd:setup-xen-dom0=3.14.6-r1 cmd:setup-xorg-base=3.14.6-r1 cmd:uniso=3.14.6-r1 cmd:update-conf=3.14.6-r1 cmd:update-kernel=3.14.6-r1"
+                            ],
+                            "depend": [
+                                "openrc>=0.24.1-r6 busybox>=1.26.1-r3 so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-ca-certificates-bundle-20220614-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "ca-certificates-bundle",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "20220614",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "20220614",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "ca-certificates",
+                        "commit": "bb51fa7743320ac61f76e181cca84daa9977573e",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "ca-certificates-cacert=20220614-r0"
+                            ],
+                            "depend": []
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {},
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-libcrypto1.1-1.1.1t-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "libcrypto1.1",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.1.1t",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "1.1.1t",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "openssl",
+                        "commit": "75d87ed5dbe0bdc52a735f27efbb1441bd112650",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libcrypto.so.1.1=1.1"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-libssl1.1-1.1.1t-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "libssl1.1",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.1.1t",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "1.1.1t",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "openssl",
+                        "commit": "75d87ed5dbe0bdc52a735f27efbb1441bd112650",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libssl.so.1.1=1.1"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                },
+                                "libcrypto.so.1.1": {
+                                    "parent": "openssl",
+                                    "child": "libcrypto1.1"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-ssl_client-1.35.0-r17-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "ssl_client",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.35.0",
+                "update": "r17",
+                "pkgrel": "17",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "1.35.0",
+                        "pkgrel": "17",
+                        "arch": "x86_64",
+                        "parent": "busybox",
+                        "commit": "2bf6ec48e526113f87216683cd341a78af5f0b3f",
+                        "struct_raw": {
+                            "install": [
+                                "busybox=1.35.0-r17 libssl1.1"
+                            ],
+                            "provide": [
+                                "cmd:ssl_client=1.35.0-r17"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                },
+                                "libcrypto.so.1.1": {
+                                    "parent": "openssl",
+                                    "child": "libcrypto1.1"
+                                },
+                                "libssl.so.1.1": {
+                                    "parent": "openssl",
+                                    "child": "libssl1.1"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-zlib-1.2.12-r3-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "zlib",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.2.12",
+                "update": "r3",
+                "pkgrel": "3",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "zlib-dev",
+                            "zlib-static",
+                            "zlib-doc"
+                        ],
+                        "pkgver": "1.2.12",
+                        "pkgrel": "3",
+                        "arch": "x86_64",
+                        "parent": "zlib",
+                        "commit": "57ce38bde7ce42964b664c137935cf2de803ac44",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libz.so.1=1.2.12"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-apk-tools-2.12.9-r3-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "apk-tools",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "2.12.9",
+                "update": "r3",
+                "pkgrel": "3",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "apk-tools-static",
+                            "lua5.3-apk",
+                            "apk-tools-zsh-completion",
+                            "apk-tools-dev",
+                            "apk-tools-doc",
+                            "apk-tools-dbg"
+                        ],
+                        "pkgver": "2.12.9",
+                        "pkgrel": "3",
+                        "arch": "x86_64",
+                        "parent": "apk-tools",
+                        "commit": "34d90ac8388e88126893f5d27ea35d304e65e5ab",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libapk.so.3.12.0=3.12.0 cmd:apk=2.12.9-r3"
+                            ],
+                            "depend": [
+                                "musl>=1.2 ca-certificates-bundle so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                },
+                                "libcrypto.so.1.1": {
+                                    "parent": "openssl",
+                                    "child": "libcrypto1.1"
+                                },
+                                "libssl.so.1.1": {
+                                    "parent": "openssl",
+                                    "child": "libssl1.1"
+                                },
+                                "libz.so.1": {
+                                    "parent": "zlib"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-busybox-suid-1.35.0-r17-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "busybox-suid",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.35.0",
+                "update": "r17",
+                "pkgrel": "17",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "1.35.0",
+                        "pkgrel": "17",
+                        "arch": "x86_64",
+                        "parent": "busybox",
+                        "commit": "2bf6ec48e526113f87216683cd341a78af5f0b3f",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "cmd:bbsuid=1.35.0-r17"
+                            ],
+                            "depend": [
+                                "busybox so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": [
+                                "busybox"
+                            ]
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-mdev-conf-4.2-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "mdev-conf",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "4.2",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "4.2",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "busybox-initscripts",
+                        "commit": "0ce8430810dd7ae8917b4e17cb67d8ed6b4cd41d",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [],
+                            "depend": []
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {},
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-busybox-initscripts-4.2-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "busybox-initscripts",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "4.2",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "mdev-conf"
+                        ],
+                        "pkgver": "4.2",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "busybox-initscripts",
+                        "commit": "0ce8430810dd7ae8917b4e17cb67d8ed6b4cd41d",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [],
+                            "depend": [
+                                "busybox openrc>=0.24.1-r6 mdev-conf=4.2-r0"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {},
+                            "execute": {},
+                            "package": [
+                                "busybox"
+                            ]
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-scanelf-1.3.4-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "scanelf",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.3.4",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "1.3.4",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "pax-utils",
+                        "commit": "d7ae612a3cc5f827289d915783b4cbf8c7207947",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "cmd:scanelf=1.3.4-r0"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-musl-utils-1.2.3-r2-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "musl-utils",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.2.3",
+                "update": "r2",
+                "pkgrel": "2",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "1.2.3",
+                        "pkgrel": "2",
+                        "arch": "x86_64",
+                        "parent": "musl",
+                        "commit": "9bb1c89d8ef20e9a69fea9ac7035a01deb27d680",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "cmd:getconf=1.2.3-r2 cmd:getent=1.2.3-r2 cmd:iconv=1.2.3-r2 cmd:ldconfig=1.2.3-r2 cmd:ldd=1.2.3-r2"
+                            ],
+                            "depend": [
+                                "scanelf so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-libc-utils-0.7.2-r3-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "libc-utils",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "0.7.2",
+                "update": "r3",
+                "pkgrel": "3",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "0.7.2",
+                        "pkgrel": "3",
+                        "arch": "x86_64",
+                        "parent": "libc-dev",
+                        "commit": "60424133be2e79bbfeff3d58147a22886f817ce2",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [],
+                            "depend": [
+                                "musl-utils"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {},
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-alpine-keys-2.4-r1-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "alpine-keys",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "2.4",
+                "update": "r1",
+                "pkgrel": "1",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "2.4",
+                        "pkgrel": "1",
+                        "arch": "x86_64",
+                        "parent": "alpine-keys",
+                        "commit": "aab68f8c9ab434a46710de8e12fb3206e2930a59",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [],
+                            "depend": []
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {},
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-alpine-base-3.16.4-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "alpine-base",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "3.16.4",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "3.16.4",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "alpine-base",
+                        "commit": "96a0ef18882177f9cc5c9dbde987944a0e72d8a9",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [],
+                            "depend": [
+                                "alpine-baselayout alpine-conf apk-tools busybox busybox-suid busybox-initscripts openrc libc-utils alpine-keys"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {},
+                            "execute": {},
+                            "package": [
+                                "alpine-baselayout",
+                                "alpine-conf",
+                                "apk-tools",
+                                "busybox",
+                                "busybox-initscripts",
+                                "openrc",
+                                "alpine-keys"
+                            ]
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-brotli-libs-1.0.9-r6-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "brotli-libs",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.0.9",
+                "update": "r6",
+                "pkgrel": "6",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "1.0.9",
+                        "pkgrel": "6",
+                        "arch": "x86_64",
+                        "parent": "brotli",
+                        "commit": "07e5929a1c69965e85d66d1504cb4611afc60ad3",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libbrotlicommon.so.1=1.0.9 so:libbrotlidec.so.1=1.0.9 so:libbrotlienc.so.1=1.0.9"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-libdbi-0.9.0-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "libdbi",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "0.9.0",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "libdbi-dev",
+                            "libdbi-doc"
+                        ],
+                        "pkgver": "0.9.0",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "libdbi",
+                        "commit": "ca98fcd02ec04a6809aeed3b55debaf2bfb6c67d",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libdbi.so.1=1.1.0"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-gdbm-1.23-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "gdbm",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.23",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "gdbm-dev",
+                            "gdbm-tools",
+                            "gdbm-doc"
+                        ],
+                        "pkgver": "1.23",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "gdbm",
+                        "commit": "d197e00079e79f6ee295cbcfb6e4c34bd3c2911f",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libgdbm.so.6=6.0.0 so:libgdbm_compat.so.4=4.0.0"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-libsasl-2.1.28-r1-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "libsasl",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "2.1.28",
+                "update": "r1",
+                "pkgrel": "1",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "2.1.28",
+                        "pkgrel": "1",
+                        "arch": "x86_64",
+                        "parent": "cyrus-sasl",
+                        "commit": "271d09e5b80bb95037de32e89d119ef915d83861",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libsasl2.so.3=3.0.0"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1 so:libgdbm.so.6"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                },
+                                "libgdbm.so.6": {
+                                    "parent": "gdbm"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-libldap-2.6.3-r3-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "libldap",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "2.6.3",
+                "update": "r3",
+                "pkgrel": "3",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "2.6.3",
+                        "pkgrel": "3",
+                        "arch": "x86_64",
+                        "parent": "openldap",
+                        "commit": "c089bc577f5fae361a6fc94156995e6cd37d7de1",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:liblber.so.2=2.0.200 so:libldap.so.2=2.0.200"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libsasl2.so.3 so:libssl.so.1.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                },
+                                "libcrypto.so.1.1": {
+                                    "parent": "openssl",
+                                    "child": "libcrypto1.1"
+                                },
+                                "libsasl2.so.3": {
+                                    "parent": "cyrus-sasl",
+                                    "child": "libsasl"
+                                },
+                                "libssl.so.1.1": {
+                                    "parent": "openssl",
+                                    "child": "libssl1.1"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-lua5.4-libs-5.4.4-r5-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "lua5.4-libs",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "5.4.4",
+                "update": "r5",
+                "pkgrel": "5",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "5.4.4",
+                        "pkgrel": "5",
+                        "arch": "x86_64",
+                        "parent": "lua5.4",
+                        "commit": "03200ecf6c3990949a1c22027f900993c5bcabd8",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:liblua-5.4.so.0=0.0.0"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-pcre2-10.40-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "pcre2",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "10.40",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "libpcre2-16",
+                            "pcre2-doc",
+                            "pcre2-tools",
+                            "libpcre2-32",
+                            "pcre2-dev"
+                        ],
+                        "pkgver": "10.40",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "pcre2",
+                        "commit": "72d2b29d2684f14dba3f9c962542225799736bdd",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libpcre2-8.so.0=0.11.0 so:libpcre2-posix.so.3=3.0.2"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-zstd-libs-1.5.2-r1-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "zstd-libs",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.5.2",
+                "update": "r1",
+                "pkgrel": "1",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "1.5.2",
+                        "pkgrel": "1",
+                        "arch": "x86_64",
+                        "parent": "zstd",
+                        "commit": "22b9167f4898653b61c7a8f289f631ac17f83740",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "so:libzstd.so.1=1.5.2"
+                            ],
+                            "depend": [
+                                "so:libc.musl-x86_64.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        },
+        {
+            "ID": "native-lighttpd-1.4.64-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "lighttpd",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.4.64",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [
+                            "lighttpd-mod_webdav",
+                            "lighttpd-mod_auth",
+                            "lighttpd-dbg",
+                            "lighttpd-openrc",
+                            "lighttpd-doc"
+                        ],
+                        "pkgver": "1.4.64",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "lighttpd",
+                        "commit": "e863d648ca4d4c3a6b267509faee6e3706f7036e",
+                        "struct_raw": {
+                            "install": [],
+                            "provide": [
+                                "cmd:lighttpd-angel=1.4.64-r0 cmd:lighttpd=1.4.64-r0"
+                            ],
+                            "depend": [
+                                "/bin/sh so:libbrotlienc.so.1 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libdbi.so.1 so:liblber.so.2 so:libldap.so.2 so:liblua-5.4.so.0 so:libpcre2-8.so.0 so:libssl.so.1.1 so:libz.so.1 so:libzstd.so.1"
+                            ]
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {
+                                "libbrotlienc.so.1": {
+                                    "parent": "brotli",
+                                    "child": "brotli-libs"
+                                },
+                                "libc.musl-x86_64.so.1": {
+                                    "parent": "musl"
+                                },
+                                "libcrypto.so.1.1": {
+                                    "parent": "openssl",
+                                    "child": "libcrypto1.1"
+                                },
+                                "libdbi.so.1": {
+                                    "parent": "libdbi"
+                                },
+                                "liblber.so.2": {
+                                    "parent": "openldap",
+                                    "child": "libldap"
+                                },
+                                "libldap.so.2": {
+                                    "parent": "openldap",
+                                    "child": "libldap"
+                                },
+                                "liblua-5.4.so.0": {
+                                    "parent": "lua5.4",
+                                    "child": "lua5.4-libs"
+                                },
+                                "libpcre2-8.so.0": {
+                                    "parent": "pcre2"
+                                },
+                                "libssl.so.1.1": {
+                                    "parent": "openssl",
+                                    "child": "libssl1.1"
+                                },
+                                "libz.so.1": {
+                                    "parent": "zlib"
+                                },
+                                "libzstd.so.1": {
+                                    "parent": "zstd",
+                                    "child": "zstd-libs"
+                                }
+                            },
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": true
+            }
+        },
+        {
+            "ID": "native-lighttpd-openrc-1.4.64-r0-alpine-alpine_linux_3.16",
+            "pipeline": {
+                "domain": "linux",
+                "product": "lighttpd-openrc",
+                "target_sw": "alpine_linux_3.16",
+                "vendor": "alpine",
+                "version": "1.4.64",
+                "update": "r0",
+                "pkgrel": "0",
+                "web_url": "",
+                "aggregator": {
+                    "type": "alpine",
+                    "match": true,
+                    "alpine": {
+                        "childs": [],
+                        "pkgver": "1.4.64",
+                        "pkgrel": "0",
+                        "arch": "x86_64",
+                        "parent": "lighttpd",
+                        "commit": "e863d648ca4d4c3a6b267509faee6e3706f7036e",
+                        "struct_raw": {
+                            "install": [
+                                "openrc lighttpd=1.4.64-r0"
+                            ],
+                            "provide": [],
+                            "depend": []
+                        },
+                        "repo": "main",
+                        "tag": "v3.16",
+                        "depends": {
+                            "develop": {},
+                            "execute": {},
+                            "package": []
+                        }
+                    }
+                }
+            },
+            "mapper": {
+                "category": "FOSS",
+                "strategic": false
+            }
+        }
+    ],
+    "modelVersion": "1.1",
+    "metadata": {
+        "aggregator": {
+            "alpine": {
+                "apkindex": {
+                    "hash": "d18cb160f077240a8196959359871eba"
+                },
+                "settings": {
+                    "ALPINE_VERSION": "3.16",
+                    "ARCH": "x86_64",
+                    "REPO_URL": "http://dl-cdn.alpinelinux.org/alpine",
+                    "BUILDER_IMAGE": "alpine_builder",
+                    "BASE_OS_IMAGE": "alpine_sandbox_base_os",
+                    "BASE_OS_VERSION": "3.16.1",
+                    "IMAGE_TITLE": "Alpine Base OS Image",
+                    "IMAGE_CREATED": "2022-12-23",
+                    "IMAGE_REVISION": "A",
+                    "IMAGE_VENDOR": "Lammda",
+                    "IMAGE_VERSION": "1",
+                    "IMAGE_AUTHOR": "hans@lammda.se"
+                },
+                "aports": {
+                    "repo": {
+                        "community": {
+                            "raw": "v3.16.4-18-g119e22a0985",
+                            "tag": "v3.16.4",
+                            "build-number": "18",
+                            "hash": "119e22a0985"
+                        },
+                        "main": {
+                            "raw": "v3.16.4-16-g3c16caa8e9c",
+                            "tag": "v3.16.4",
+                            "build-number": "16",
+                            "hash": "3c16caa8e9c"
+                        }
+                    },
+                    "arch": "x86_64"
+                },
+                "stats": {
+                    "lookup": {
+                        "total": 31,
+                        "miss": 0,
+                        "match": 31
+                    },
+                    "structure": {
+                        "childs": 16,
+                        "parents": 15
+                    }
+                }
+            }
+        }
+    }
+}
