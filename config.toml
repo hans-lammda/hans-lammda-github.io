@@ -1,50 +1,129 @@
-baseurl = "https://lammda.se/"
-contentdir    = "content"
-layoutdir     = "layouts"
-publishdir    = "docs"
-title = "Lamm Consulting AB "
-canonifyurls  = true
+baseURL = "https://lammda.se"
 
+languageCode = "en-us"
 DefaultContentLanguage = "en"
-theme = "beautifulhugo"
+title = "Lamm Consulting AB"
+theme = "hugo-theme-techdoc"
+publishdir    = "docs"
+
+hasCJKLanguage = true
 metaDataFormat = "yaml"
-pygmentsUseClasses = true
-pygmentCodeFences = true
 
-[Params]
-  subtitle = "SBOM for isolated rebuild of Alpine packages"
-  logo = "img/avatar-icon.png"
-  favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  commit = false
-  rss = false
-  comments = true
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
 
+[params]
 
-[Author]
-  name = "Hans Thorsen Lamm"
-  email = "hans@lammda.se"
-  gitlab = "hans-lammda"
-  github = "hans-lammda"
-  linkedin = "hans-thorsen-b76411244/"
+    # Source Code repository section
+    description = "Nybrogatan 34 114 39 Stockholm"
+    #github_repository = "https://github.com/thingsym/hugo-theme-techdoc"
+    version = ""
 
+    # Documentation repository section
+    # documentation repository (set edit link to documentation repository)
+    github_doc_repository = "https://github.com/thingsym/hugo-theme-techdoc"
+    github_doc_repository_path = ""
+    github_doc_repository_branch = "master"
 
-[[menu.main]]
-    name = "Build"
-    url = "start/"
-    weight = 1
+    # Analytic section
+    google_analytics_id = "" # Your Google Analytics tracking id
+    tag_manager_container_id = "" # Your Google Tag Manager container id
+    google_site_verification = "" # Your Google Site Verification for Search Console
 
-[[menu.main]]
-    name = "SBOM"
-    url = "sbom/"
-    weight = 2
+    # Open Graph and Twitter Cards settings section
+    # Open Graph settings for each page are set on the front matter.
+    # See https://gohugo.io/templates/internal/#open-graph
+    # See https://gohugo.io/templates/internal/#twitter-cards
+    title = "Hugo Techdoc Theme"
+    images = ["images/og-image.png"] # Open graph images are placed in `static/images`
 
-[[menu.main]]
-    name = "Donations"
-    url = "donations/"
-    weight = 3
+    # Theme settings section
+    # Theme color
+    # See color value reference https://developer.mozilla.org/en-US/docs/Web/CSS/color
+    custom_font_color = ""
+    custom_background_color = ""
 
-[[menu.main]]
-    name = "Events"
-    url = "events/"
-    weight = 4
+    # Documentation Menu section
+    # Menu style settings
+    #menu_style = "open-menu" # "open-menu" or "slide-menu" or "" blank is as no sidebar
+    menu_style = "slide-menu" # or "" blank is as no sidebar
+
+    # Date format
+    dateformat = "" # default "2 Jan 2006"
+    # See the format reference https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+
+    # path name excluded from documentation menu
+    menu_exclusion = [
+        "archives",
+        "archive",
+        "blog",
+        "entry",
+        "post",
+        "posts",
+    ]
+
+    # Algolia site search section
+    # See https://www.algolia.com/doc/
+    algolia_search_enable = true
+    algolia_indexName = "hugo-demo-techdoc"
+    algolia_appId = "7W4SAN4PLK"
+    algolia_apiKey = "cbf12a63ff72d9c5dc0c10c195cf9128" # Search-Only API Key
+
+# Global menu section
+# See https://gohugo.io/content-management/menus/
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+        identifier = 'home'
+        #pre = "<i class='fa fa-heart'></i>&nbsp;"
+
+    [[menu.main]]
+        name = "BomResolver"
+        url = "https://bomresolver.io"
+        weight = 2
+        identifier = 'twitter'
+        #pre = "<b>pre!</b> "
+        #post = " <b>post!</b>"
+        [menu.main.params]
+          class = 'twitter-menu-item'
+
+# Markup configure section
+# See https://gohugo.io/getting-started/configuration-markup/
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark.renderer]
+        unsafe= true
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 6
+        ordered = false
+
+[outputs]
+    home = ["HTML", "RSS", "Algolia"]
+
+# Algolia Search configure section
+[outputFormats.Algolia]
+    baseName = "algolia"
+    mediaType = "application/json"
+    isPlainText = true
+    notAlternative = true
+
+[params.algolia]
+    vars = [
+        "title",
+        "summary",
+        "content",
+        "date",
+        "publishdate",
+        "description",
+        "permalink",
+        "keywords",
+        "lastmod",
+    ]
+    params = [
+        "tags",
+        "categories",
+    ]

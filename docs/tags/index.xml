@@ -1,64 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Lamm Consulting AB </title>
+    <title>Tags on Lamm Consulting AB</title>
     <link>https://lammda.se/tags/</link>
-    <description>Recent content in Tags on Lamm Consulting AB </description>
+    <description>Recent content in Tags on Lamm Consulting AB</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>hans@lammda.se (Hans Thorsen Lamm)</managingEditor>
-    <webMaster>hans@lammda.se (Hans Thorsen Lamm)</webMaster>
-    <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://lammda.se/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://lammda.se/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>example</title>
-      <link>https://lammda.se/tags/example/</link>
-      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
-      <author>hans@lammda.se (Hans Thorsen Lamm)</author>
-      <guid>https://lammda.se/tags/example/</guid>
+      <title>development</title>
+      <link>https://lammda.se/tags/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://lammda.se/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>photoswipe</title>
-      <link>https://lammda.se/tags/photoswipe/</link>
-      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
-      <author>hans@lammda.se (Hans Thorsen Lamm)</author>
-      <guid>https://lammda.se/tags/photoswipe/</guid>
+      <title>go</title>
+      <link>https://lammda.se/tags/go/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://lammda.se/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>bigimg</title>
-      <link>https://lammda.se/tags/bigimg/</link>
-      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
-      <author>hans@lammda.se (Hans Thorsen Lamm)</author>
-      <guid>https://lammda.se/tags/bigimg/</guid>
+      <title>golang</title>
+      <link>https://lammda.se/tags/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://lammda.se/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>math</title>
-      <link>https://lammda.se/tags/math/</link>
-      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
-      <author>hans@lammda.se (Hans Thorsen Lamm)</author>
-      <guid>https://lammda.se/tags/math/</guid>
+      <title>hugo</title>
+      <link>https://lammda.se/tags/hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://lammda.se/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>code</title>
-      <link>https://lammda.se/tags/code/</link>
-      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
-      <author>hans@lammda.se (Hans Thorsen Lamm)</author>
-      <guid>https://lammda.se/tags/code/</guid>
+      <title>templates</title>
+      <link>https://lammda.se/tags/templates/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://lammda.se/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>markdown</title>
-      <link>https://lammda.se/tags/markdown/</link>
-      <pubDate>Fri, 20 Feb 2015 00:00:00 +0000</pubDate>
-      <author>hans@lammda.se (Hans Thorsen Lamm)</author>
-      <guid>https://lammda.se/tags/markdown/</guid>
+      <title>themes</title>
+      <link>https://lammda.se/tags/themes/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://lammda.se/tags/themes/</guid>
       <description></description>
     </item>
     
