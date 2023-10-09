@@ -1,0 +1,58 @@
+#
+
+CONTAINER_BUILD_TOOL=docker.io/bomres/base_os_alpine
+
+#  Aggregator 
+ALPINE_VERSION=3.18
+ARCH=x86_64
+REPO_URL=http://dl-cdn.alpinelinux.org/alpine
+
+# Base  Layer 
+BASE_OS_IMAGE=custom_alpine
+BASE_OS_VERSION=1.0.2
+
+PACKAGE=lighttpd
+
+IMAGE_TITLE="Base OS Image with Lighttpd"
+IMAGE_VERSION=1
+IMAGE_REVISION="A"
+IMAGE_AUTHOR=hans@lammda.se
+IMAGE_VENDOR="Lammda"
+
+# Service Layer 
+
+SERVER_ROOT=/lammda
+NETWORK_PORT=8080
+NETWORK_PATH=/lammda
+
+SERVICE_IMAGE=lammda
+SERVICE_VERSION=1.0.2
+
+# Static content 
+
+STATIC_CONTENT_SRC=/home/hans/development/git-clones/hans-lammda.github.io/docs
+
+
+# Container registry 
+
+REGISTRY=docker.io
+REPOSITORY=bomres
+
+# Kubernetes  
+
+NAMESPACE=lammda
+SERVICE=lammda
+USER=lighttpd
+REPLICA_COUNT=1
+SERVER_HOST=services.lammda.se
+SERVER_NAME=https://$(SERVER_HOST)
+CLUSTER_ISSUER=letsencrypt-prod
+
+HELM_VERSION=$(SERVICE_VERSION)
+
+
+
+
+
+
+

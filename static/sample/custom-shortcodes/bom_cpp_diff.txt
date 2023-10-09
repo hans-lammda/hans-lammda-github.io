@@ -1,0 +1,46 @@
+380,389d379
+< 
+< 
+< 
+< extern int snprintf (char *__restrict __s, size_t __maxlen,
+<        const char *__restrict __format, ...)
+<      __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 3, 4)));
+< 
+< extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+<         const char *__restrict __format, __gnuc_va_list __arg)
+<      __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 3, 0)));
+425,458d414
+< # 459 "/usr/include/stdio.h" 3 4
+< extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
+<       __gnuc_va_list __arg)
+<      __attribute__ ((__format__ (__scanf__, 2, 0))) ;
+< 
+< 
+< 
+< 
+< 
+< extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
+<      __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+< 
+< 
+< extern int vsscanf (const char *__restrict __s,
+<       const char *__restrict __format, __gnuc_va_list __arg)
+<      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__format__ (__scanf__, 2, 0)));
+< 
+< 
+< 
+< 
+< 
+< extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfscanf")
+< 
+< 
+< 
+<      __attribute__ ((__format__ (__scanf__, 2, 0))) ;
+< extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vscanf")
+< 
+<      __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+< extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vsscanf") __attribute__ ((__nothrow__ , __leaf__))
+< 
+< 
+< 
+<      __attribute__ ((__format__ (__scanf__, 2, 0)));
