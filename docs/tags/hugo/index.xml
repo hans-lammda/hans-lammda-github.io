@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on Lamm Consulting AB</title>
-    <link>https://lammda.se/tags/hugo/</link>
+    <link>https://services.lammda.se/lammda/tags/hugo/</link>
     <description>Recent content in hugo on Lamm Consulting AB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://lammda.se/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://services.lammda.se/lammda/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>References</title>
-      <link>https://lammda.se/post/hugoisforlovers/</link>
+      <link>https://services.lammda.se/lammda/post/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://lammda.se/post/hugoisforlovers/</guid>
+      <guid>https://services.lammda.se/lammda/post/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at Install Hugo

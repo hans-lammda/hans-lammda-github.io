@@ -5,25 +5,16 @@
     <loc>https://lammda.se/getting-started/</loc>
     <lastmod>2018-12-08T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://lammda.se/sample/markdown-syntax/</loc>
-    <lastmod>2020-11-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/sample/build-in-shortcodes/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/chapter2/3/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
     <loc>https://lammda.se/sample/custom-shortcodes/</loc>
+    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://lammda.se/sample/markdown-syntax/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://lammda.se/getting-started/installation/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://lammda.se/sample/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/sample/table-of-contents/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://lammda.se/post/creating-a-new-theme/</loc>
@@ -38,35 +29,17 @@
     <loc>https://lammda.se/posts/hello_world/</loc>
     <lastmod>2017-10-17T14:00:45+00:00</lastmod>
   </url><url>
-    <loc>https://lammda.se/chapter1/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/chapter2/4/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
     <loc>https://lammda.se/getting-started/configuration/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://lammda.se/getting-started/screenshot/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://lammda.se/chapter2/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/chapter2/2/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/chapter2/1/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
     <loc>https://lammda.se/chapter3/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://lammda.se/chapter4/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/sample/search-shortcode/</loc>
-    <lastmod>2020-03-30T18:49:06+00:00</lastmod>
   </url><url>
     <loc>https://lammda.se/archives/</loc>
     <lastmod>2017-12-17T14:00:45+00:00</lastmod>
@@ -97,21 +70,6 @@
   </url><url>
     <loc>https://lammda.se/</loc>
     <lastmod>2019-10-26T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/chapter1/1/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/chapter1/2/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/chapter1/3/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/chapter1/4/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/chapter2/5/</loc>
-    <lastmod>2017-10-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://lammda.se/chapter3/1/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
@@ -170,9 +128,6 @@
     <loc>https://lammda.se/post/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://lammda.se/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://lammda.se/categories/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
@@ -189,9 +144,6 @@
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lammda.se/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lammda.se/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lammda.se/post/goisforlovers/</loc>

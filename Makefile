@@ -12,7 +12,9 @@ static:
 
 PORT=8080
 SRV_ROOT=$(PWD)/docs
-SERVER_NAME="http://localhost:$(PORT)/hugo"
+SRV_ROOT=/home/hans/cybercampus/cybercampus.se
+SRV_ROOT=/home/hans/cybercampus/cybernode.se
+SERVER_NAME="http://localhost:$(PORT)/lammda"
 
 hugo:
 	hugo server  -verbose --config config.toml  --port $(PORT)  --bind="0.0.0.0" --baseURL=$(SERVER_NAME)  public 

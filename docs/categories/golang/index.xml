@@ -8,27 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://lammda.se/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Patents</title>
+      <title>Offering</title>
       <link>https://lammda.se/post/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://lammda.se/post/goisforlovers/</guid>
-      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
-This document is a brief primer on using Go templates.</description>
-    </item>
-    
-    <item>
-      <title>References</title>
-      <link>https://lammda.se/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://lammda.se/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+      <description>Workshops I share my knowledge about supply chains and strong authentication.
+Starting from scratch and I deliver a fast and scalable static website with multi factor authentication.
+   Title Duration Delivery Price     Static content One day Hugo Website on Github or Gitlab 10.000 SEK + VAT    References Long time support , customization, hardening requires hosting of packages
+   Site Comment     Repository Serving Alpine packages with stylesheet    Innovation hubs and public sector sites in Sweden that could be hosted on ICE Datacenter with support from Swedish tech hubs</description>
     </item>
     
   </channel>

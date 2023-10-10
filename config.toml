@@ -1,4 +1,6 @@
-baseURL = "https://lammda.se"
+baseURL = "https://lammda.se/"
+#baseURL = "https://services.lammda.se/lammda"
+#baseURL = "http://localhost:8080/hugo"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
@@ -57,6 +59,10 @@ enableMissingTranslationPlaceholders = false
     menu_exclusion = [
         "archives",
         "archive",
+        "about.md",
+        "chapter3",
+        "chapter4",
+        "getting-started",
         "blog",
         "entry",
         "post",
@@ -80,15 +86,15 @@ enableMissingTranslationPlaceholders = false
         identifier = 'home'
         #pre = "<i class='fa fa-heart'></i>&nbsp;"
 
-    [[menu.main]]
-        name = "BomResolver"
-        url = "https://bomresolver.io"
-        weight = 2
-        identifier = 'twitter'
-        #pre = "<b>pre!</b> "
-        #post = " <b>post!</b>"
-        [menu.main.params]
-          class = 'twitter-menu-item'
+#    [[menu.main]]
+#        name = "BomResolver"
+#        url = "https://bomresolver.io"
+#        weight = 2
+#        identifier = 'twitter'
+#        #pre = "<b>pre!</b> "
+#        #post = " <b>post!</b>"
+#        [menu.main.params]
+#          class = 'twitter-menu-item'
 
 # Markup configure section
 # See https://gohugo.io/getting-started/configuration-markup/
