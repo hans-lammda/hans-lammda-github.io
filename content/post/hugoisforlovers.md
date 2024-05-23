@@ -9,11 +9,11 @@ menu = "main"
 
 I submitted an application for funding which was presented  May 21.
 
-[Application for funding](../../documents/ansokan_2024_03_17.pdf )
+[Application for funding](/documents/ansokan_2024_03_17.pdf )
 
-[Invitation](../../documents/flyer.pdf )
+[Invitation](/documents/flyer.pdf )
 
-[Slides](../../documents/2024_05_21.pdf)
+[Slides](/documents/2024_05_21.pdf)
 
 [Recording](https://www.youtube.com/watch?v=lx8DmbRZLSM)
 
