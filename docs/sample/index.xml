@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Supply Chain on Lamm Consulting AB</title>
-    <link>https://lammda.se/sample/</link>
+    <link>https://bomresolver.com/sample/</link>
     <description>Recent content in Software Supply Chain on Lamm Consulting AB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://lammda.se/sample/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://bomresolver.com/sample/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello SBOM</title>
-      <link>https://lammda.se/sample/custom-shortcodes/</link>
+      <link>https://bomresolver.com/sample/custom-shortcodes/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/sample/custom-shortcodes/</guid>
+      <guid>https://bomresolver.com/sample/custom-shortcodes/</guid>
       <description>Introduction The process of building software could be compared with a factory assembly line where the product is on on top of the belt and the toolchain is the assemly line itself.
 Let&amp;rsquo;s make it easy by keeping the product to four-line of source code, so we can focus on the underlying assembly line ( toolchain and platform ).
 Hello world is the most famous C program , but in the era of Software-bill-of-material it raises several challenges.</description>
@@ -20,10 +20,10 @@ Hello world is the most famous C program , but in the era of Software-bill-of-ma
     
     <item>
       <title>Serving static content</title>
-      <link>https://lammda.se/sample/markdown-syntax/</link>
+      <link>https://bomresolver.com/sample/markdown-syntax/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/sample/markdown-syntax/</guid>
+      <guid>https://bomresolver.com/sample/markdown-syntax/</guid>
       <description>Introduction For software supply chain updates it is crucial that security updates are highly available, for business speed means better ranking in search engines Static websites store already-rendered content and could be replicated to many endpoints making it more resilient against DDOS attacks.
 Content Alpine packages From a security aspect, this is good since no user experience is required for serving images. No need for Javascript downloaded from external sites. In order</description>
     </item>

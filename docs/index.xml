@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lamm Consulting AB</title>
-    <link>https://lammda.se/</link>
+    <link>https://bomresolver.com/</link>
     <description>Recent content on Lamm Consulting AB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://lammda.se/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://bomresolver.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello SBOM</title>
-      <link>https://lammda.se/sample/custom-shortcodes/</link>
+      <link>https://bomresolver.com/sample/custom-shortcodes/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/sample/custom-shortcodes/</guid>
+      <guid>https://bomresolver.com/sample/custom-shortcodes/</guid>
       <description>Introduction The process of building software could be compared with a factory assembly line where the product is on on top of the belt and the toolchain is the assemly line itself.
 Let&amp;rsquo;s make it easy by keeping the product to four-line of source code, so we can focus on the underlying assembly line ( toolchain and platform ).
 Hello world is the most famous C program , but in the era of Software-bill-of-material it raises several challenges.</description>
@@ -20,20 +20,20 @@ Hello world is the most famous C program , but in the era of Software-bill-of-ma
     
     <item>
       <title>Serving static content</title>
-      <link>https://lammda.se/sample/markdown-syntax/</link>
+      <link>https://bomresolver.com/sample/markdown-syntax/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/sample/markdown-syntax/</guid>
+      <guid>https://bomresolver.com/sample/markdown-syntax/</guid>
       <description>Introduction For software supply chain updates it is crucial that security updates are highly available, for business speed means better ranking in search engines Static websites store already-rendered content and could be replicated to many endpoints making it more resilient against DDOS attacks.
 Content Alpine packages From a security aspect, this is good since no user experience is required for serving images. No need for Javascript downloaded from external sites. In order</description>
     </item>
     
     <item>
       <title>Installation</title>
-      <link>https://lammda.se/getting-started/installation/</link>
+      <link>https://bomresolver.com/getting-started/installation/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/getting-started/installation/</guid>
+      <guid>https://bomresolver.com/getting-started/installation/</guid>
       <description>Install Hugo theme on your project If you have git installed, you can include hugo-theme-techdoc repository into your core repository as submodule using git submodule within your project directory.
 cd your_project git submodule add https://github.com/thingsym/hugo-theme-techdoc.git themes/hugo-theme-techdoc For more information read the Hugo documentation.
 Or download Hugo theme on your project If you have git installed, you can do the following at the command-line-interface within your project directory.
@@ -42,47 +42,47 @@ cd your_project/themes git clone https://github.</description>
     
     <item>
       <title>Sidiatech</title>
-      <link>https://lammda.se/post/creating-a-new-theme/</link>
+      <link>https://bomresolver.com/post/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://lammda.se/post/creating-a-new-theme/</guid>
+      <guid>https://bomresolver.com/post/creating-a-new-theme/</guid>
       <description>About Sidiatech My first sponsor of the BomResolver</description>
     </item>
     
     <item>
       <title>T2Data</title>
-      <link>https://lammda.se/post/migrate-from-jekyll/</link>
+      <link>https://bomresolver.com/post/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://lammda.se/post/migrate-from-jekyll/</guid>
+      <guid>https://bomresolver.com/post/migrate-from-jekyll/</guid>
       <description>About T2Data Together we have a joint venture with patents for Identity and Intergrity
 Stay tuned</description>
     </item>
     
     <item>
       <title>Hello world!</title>
-      <link>https://lammda.se/hello_world/</link>
+      <link>https://bomresolver.com/hello_world/</link>
       <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/hello_world/</guid>
+      <guid>https://bomresolver.com/hello_world/</guid>
       <description>Hello world!</description>
     </item>
     
     <item>
       <title>Hello_world</title>
-      <link>https://lammda.se/posts/hello_world/</link>
+      <link>https://bomresolver.com/posts/hello_world/</link>
       <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/posts/hello_world/</guid>
+      <guid>https://bomresolver.com/posts/hello_world/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>https://lammda.se/getting-started/configuration/</link>
+      <link>https://bomresolver.com/getting-started/configuration/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/getting-started/configuration/</guid>
+      <guid>https://bomresolver.com/getting-started/configuration/</guid>
       <description>You may specify options in config.toml (or config.yaml/config.json) of your site to make use of this theme’s features.
 For an example of config.toml, see config.toml in exampleSite.
 Params # Source Code repository section description = &amp;quot;put your description&amp;quot; github_repository = &amp;quot;https://github.com/thingsym/hugo-theme-techdoc&amp;quot; version = &amp;quot;1.0.0&amp;quot; # Documentation repository section # documentation repository (set edit link to documentation repository) github_doc_repository = &amp;quot;https://github.com/thingsym/hugo-theme-techdoc&amp;quot; github_doc_repository_path = &amp;quot;&amp;quot; github_doc_repository_branch = &amp;quot;master&amp;quot; # Analytic section google_analytics_id = &amp;quot;&amp;quot; # Your Google Analytics tracking id tag_manager_container_id = &amp;quot;&amp;quot; # Your Google Tag Manager container id google_site_verification = &amp;quot;&amp;quot; # Your Google Site Verification for Search Console # Open Graph and Twitter Cards settings section # Open Graph settings for each page are set on the front matter.</description>
@@ -90,19 +90,19 @@ Params # Source Code repository section description = &amp;quot;put your descrip
     
     <item>
       <title>Screenshot</title>
-      <link>https://lammda.se/getting-started/screenshot/</link>
+      <link>https://bomresolver.com/getting-started/screenshot/</link>
       <pubDate>Sat, 26 Oct 2019 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/getting-started/screenshot/</guid>
+      <guid>https://bomresolver.com/getting-started/screenshot/</guid>
       <description>Theme color Menu style Open Menu Slide Menu Edit link </description>
     </item>
     
     <item>
       <title>Hello_world2</title>
-      <link>https://lammda.se/archives/hello_world2/</link>
+      <link>https://bomresolver.com/archives/hello_world2/</link>
       <pubDate>Sun, 17 Dec 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/archives/hello_world2/</guid>
+      <guid>https://bomresolver.com/archives/hello_world2/</guid>
       <description>aaaaaa
 vvvv
 aaa</description>
@@ -110,10 +110,10 @@ aaa</description>
     
     <item>
       <title>Hello_world2</title>
-      <link>https://lammda.se/blog/hello_world2/</link>
+      <link>https://bomresolver.com/blog/hello_world2/</link>
       <pubDate>Sun, 17 Dec 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/blog/hello_world2/</guid>
+      <guid>https://bomresolver.com/blog/hello_world2/</guid>
       <description>aaaaaa
 vvvv
 aaa</description>
@@ -121,10 +121,10 @@ aaa</description>
     
     <item>
       <title>Hello_world2</title>
-      <link>https://lammda.se/entry/hello_world2/</link>
+      <link>https://bomresolver.com/entry/hello_world2/</link>
       <pubDate>Sun, 17 Dec 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/entry/hello_world2/</guid>
+      <guid>https://bomresolver.com/entry/hello_world2/</guid>
       <description>aaaaaa
 vvvv
 aaa</description>
@@ -132,10 +132,10 @@ aaa</description>
     
     <item>
       <title>Hello_world1</title>
-      <link>https://lammda.se/archives/hello_world1/</link>
+      <link>https://bomresolver.com/archives/hello_world1/</link>
       <pubDate>Fri, 17 Nov 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/archives/hello_world1/</guid>
+      <guid>https://bomresolver.com/archives/hello_world1/</guid>
       <description>aaaaaa
 vvvv
 aaa</description>
@@ -143,10 +143,10 @@ aaa</description>
     
     <item>
       <title>Hello_world1</title>
-      <link>https://lammda.se/blog/hello_world1/</link>
+      <link>https://bomresolver.com/blog/hello_world1/</link>
       <pubDate>Fri, 17 Nov 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/blog/hello_world1/</guid>
+      <guid>https://bomresolver.com/blog/hello_world1/</guid>
       <description>aaaaaa
 vvvv
 aaa</description>
@@ -154,10 +154,10 @@ aaa</description>
     
     <item>
       <title>Hello_world1</title>
-      <link>https://lammda.se/entry/hello_world1/</link>
+      <link>https://bomresolver.com/entry/hello_world1/</link>
       <pubDate>Fri, 17 Nov 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/entry/hello_world1/</guid>
+      <guid>https://bomresolver.com/entry/hello_world1/</guid>
       <description>aaaaaa
 vvvv
 aaa</description>
@@ -165,73 +165,73 @@ aaa</description>
     
     <item>
       <title>Chapter 3-1</title>
-      <link>https://lammda.se/chapter3/1/</link>
+      <link>https://bomresolver.com/chapter3/1/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/chapter3/1/</guid>
+      <guid>https://bomresolver.com/chapter3/1/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
       <title>Chapter 3-2-1</title>
-      <link>https://lammda.se/chapter3/chapter3-2/1/</link>
+      <link>https://bomresolver.com/chapter3/chapter3-2/1/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/chapter3/chapter3-2/1/</guid>
+      <guid>https://bomresolver.com/chapter3/chapter3-2/1/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
       <title>Chapter 3-2-2</title>
-      <link>https://lammda.se/chapter3/chapter3-2/2/</link>
+      <link>https://bomresolver.com/chapter3/chapter3-2/2/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/chapter3/chapter3-2/2/</guid>
+      <guid>https://bomresolver.com/chapter3/chapter3-2/2/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
       <title>Chapter 3-2-3</title>
-      <link>https://lammda.se/chapter3/chapter3-2/3/</link>
+      <link>https://bomresolver.com/chapter3/chapter3-2/3/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/chapter3/chapter3-2/3/</guid>
+      <guid>https://bomresolver.com/chapter3/chapter3-2/3/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
       <title>Chapter 3-2-4</title>
-      <link>https://lammda.se/chapter3/chapter3-2/4/</link>
+      <link>https://bomresolver.com/chapter3/chapter3-2/4/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/chapter3/chapter3-2/4/</guid>
+      <guid>https://bomresolver.com/chapter3/chapter3-2/4/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
       <title>Chapter 3-3</title>
-      <link>https://lammda.se/chapter3/3/</link>
+      <link>https://bomresolver.com/chapter3/3/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/chapter3/3/</guid>
+      <guid>https://bomresolver.com/chapter3/3/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
       <title>Chapter 3-4</title>
-      <link>https://lammda.se/chapter3/4/</link>
+      <link>https://bomresolver.com/chapter3/4/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
-      <guid>https://lammda.se/chapter3/4/</guid>
+      <guid>https://bomresolver.com/chapter3/4/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
       <title>Hello_world</title>
-      <link>https://lammda.se/archives/hello_world/</link>
+      <link>https://bomresolver.com/archives/hello_world/</link>
       <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/archives/hello_world/</guid>
+      <guid>https://bomresolver.com/archives/hello_world/</guid>
       <description>aaaaaa
 vvvv
 aaa</description>
@@ -239,10 +239,10 @@ aaa</description>
     
     <item>
       <title>Hello_world</title>
-      <link>https://lammda.se/blog/hello_world/</link>
+      <link>https://bomresolver.com/blog/hello_world/</link>
       <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/blog/hello_world/</guid>
+      <guid>https://bomresolver.com/blog/hello_world/</guid>
       <description>aaaaaa
 vvvv
 aaa</description>
@@ -250,10 +250,10 @@ aaa</description>
     
     <item>
       <title>Hello_world</title>
-      <link>https://lammda.se/entry/hello_world/</link>
+      <link>https://bomresolver.com/entry/hello_world/</link>
       <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://lammda.se/entry/hello_world/</guid>
+      <guid>https://bomresolver.com/entry/hello_world/</guid>
       <description>aaaaaa
 vvvv
 aaa</description>
@@ -261,10 +261,10 @@ aaa</description>
     
     <item>
       <title>Offering</title>
-      <link>https://lammda.se/post/goisforlovers/</link>
+      <link>https://bomresolver.com/post/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://lammda.se/post/goisforlovers/</guid>
+      <guid>https://bomresolver.com/post/goisforlovers/</guid>
       <description>Workshops I share my knowledge about supply chains and strong authentication.
 Starting from scratch and I deliver a fast and scalable static website with multi factor authentication.
    Title Duration Delivery Price     Static content One day Hugo Website on Github or Gitlab 10.000 SEK + VAT    References Long time support , customization, hardening requires hosting of packages
@@ -273,11 +273,15 @@ Starting from scratch and I deliver a fast and scalable static website with mult
     
     <item>
       <title>Sustainability</title>
-      <link>https://lammda.se/post/hugoisforlovers/</link>
+      <link>https://bomresolver.com/post/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://lammda.se/post/hugoisforlovers/</guid>
-      <description>Generate more clean electricity Geothermal energy
+      <guid>https://bomresolver.com/post/hugoisforlovers/</guid>
+      <description>Enhanced Geothermal System I submitted an application for funding which was presented May 21.
+Application for funding
+Invitation
+Slides
+Recording
 Consume less electricity Green software lab</description>
     </item>
     

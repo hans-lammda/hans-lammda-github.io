@@ -5,10 +5,17 @@ date = "2014-04-02"
 menu = "main"
 +++
 
-## Generate more clean electricity 
+## Enhanced Geothermal System
 
-[Geothermal energy](https://www.quaise.energy/)
+I submitted an application for funding which was presented  May 21.
 
+[Application for funding](../../documents/ansokan_2024_03_17.pdf )
+
+[Invitation](../../documents/flyer.pdf )
+
+[Slides](../../documents/2024_05_21.pdf)
+
+[Recording](https://www.youtube.com/watch?v=lx8DmbRZLSM)
 
 ## Consume less electricity
 [Green software lab](https://greenlab.di.uminho.pt/)
