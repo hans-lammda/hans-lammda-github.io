@@ -14,8 +14,11 @@ menu = "main"
     <th>Document</th>
   </tr>
   <tr>
-    <td rowspan="4"><A HREF="https://www.euractiv.com/section/energy/news/eu-parliament-calls-for-european-strategy-on-geothermal-energy/">Initial</a> </td>
-    <td><A HREF="/documents/ansokan_2024_03_17.pdf">Application for funding</a></td>
+    <td rowspan="5"><A HREF="https://www.euractiv.com/section/energy/news/eu-parliament-calls-for-european-strategy-on-geothermal-energy/">Initial</a> </td>
+    <td><A HREF="/documents/ansokan_2024_03_17.pdf">Application for funding 2024 03 17 </a></td>
+  </tr>
+  <tr>
+    <td><A HREF="/documents/Beslut.pdf">Decision 2024 09 01 </a></td>
   </tr>
   <tr>
     <td><A HREF="/documents/flyer.pdf">Invitation to meeting 2024 05 21 </a></td>
