@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>themes on Lamm Consulting AB</title>
-    <link>https://bomresolver.com/tags/themes/</link>
+    <link>https://lammda.se/tags/themes/</link>
     <description>Recent content in themes on Lamm Consulting AB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://bomresolver.com/tags/themes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://lammda.se/tags/themes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Offering</title>
-      <link>https://bomresolver.com/post/goisforlovers/</link>
+      <link>https://lammda.se/post/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://bomresolver.com/post/goisforlovers/</guid>
+      <guid>https://lammda.se/post/goisforlovers/</guid>
       <description>Workshops I share my knowledge about supply chains and strong authentication.
 Starting from scratch and I deliver a fast and scalable static website with multi factor authentication.
    Title Duration Delivery Price     Static content One day Hugo Website on Github or Gitlab 10.000 SEK + VAT    References Long time support , customization, hardening requires hosting of packages

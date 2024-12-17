@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Lamm Consulting AB</title>
-    <link>https://bomresolver.com/posts/</link>
+    <link>https://lammda.se/posts/</link>
     <description>Recent content in Posts on Lamm Consulting AB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Oct 2017 14:00:45 +0000</lastBuildDate><atom:link href="https://bomresolver.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Oct 2017 14:00:45 +0000</lastBuildDate><atom:link href="https://lammda.se/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello_world</title>
-      <link>https://bomresolver.com/posts/hello_world/</link>
+      <link>https://lammda.se/posts/hello_world/</link>
       <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
       
-      <guid>https://bomresolver.com/posts/hello_world/</guid>
+      <guid>https://lammda.se/posts/hello_world/</guid>
       <description></description>
     </item>
     

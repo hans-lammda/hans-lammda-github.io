@@ -1,5 +1,5 @@
-#baseURL = "https://lammda.se/"
-baseURL = "https://bomresolver.com"
+baseURL = "https://lammda.se/"
+#baseURL = "https://bomresolver.com"
 #baseURL = "https://services.lammda.se/lammda"
 #baseURL = "http://localhost:8080/hugo"
 
