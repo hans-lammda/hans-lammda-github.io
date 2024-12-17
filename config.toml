@@ -19,7 +19,7 @@ enableMissingTranslationPlaceholders = false
 [params]
 
     # Source Code repository section
-    description = "Nybrogatan 34 114 39 Stockholm"
+    description = "Sibyllegatan 50 114 43 Stockholm"
     #github_repository = "https://github.com/thingsym/hugo-theme-techdoc"
     version = ""
 
