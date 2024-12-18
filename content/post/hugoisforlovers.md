@@ -34,8 +34,11 @@ menu = "main"
     <td colspan="2" style="border-top: 2px solid grey;"></td>
   </tr>
   <tr>
-    <td rowspan="3"><A HREF="https://www.nato.int/cps/en/natohq/topics_132722.htm">Cybersecurity</a> </td>
-    <td><A HREF="/documents/svk.pdf">Problem with FCR services </a></td>
+    <td rowspan="4"><A HREF="https://www.nato.int/cps/en/natohq/topics_132722.htm">Cybersecurity</a> </td>
+    <td><A HREF="/documents/CfCs_Rapport_Cyberhot-mot-elsystemet.pdf">RISE cybersecurity report on devices related to Energy Grid March 2023</a></td>
+  </tr>
+  <tr>
+    <td><A HREF="/documents/svk.pdf">Svenska Kraftnät identifies potential problems with aggregated resources 2024 05 22</a></td>
   </tr>
   <tr>
     <td><A HREF="/documents/msb_ansokan.pdf">Application to MSB 2024 09 12</a></td>
