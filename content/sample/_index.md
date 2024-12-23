@@ -6,7 +6,7 @@ weight: 10
 description: "Supply chain"
 ---
 
-![Supply chain](/images/supply.svg )
+![Supply chain](/images/supply.png )
 
 Almost all software is expected to have bugs, and some bugs impact security. If you are lucky the bug is detected early in the supply chain.  If the bug is detected after deployment the product must be designed for updates.  If the bug is related to hardware, mitigation includes the replacement of the physical product. Applications reside on the top of the product stack and reflect the usage domain.  Medical devices must comply with another set of requirements than toys. Vulnerabilities are bugs that impact security and could result in the leakage of sensitive data.  The purpose of the table below is to map different mindsets across the product and also how to handle bugs. 
 Middleware and hypervisors are excluded. 
