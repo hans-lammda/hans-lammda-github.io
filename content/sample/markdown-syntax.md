@@ -97,7 +97,7 @@ In the picture below three different alternatives are listed for serviing static
 * Generate a Alpine container from scratch, add content and deploy to [Kubernetes](https://services.lammda.se/lammda/) using a [configfile](config.txt)
 
 
-![4 Supply chain](../../images/example.svg )
+![4 Supply chain](/images/example.svg )
 
 #### lighttpd configuration
 
