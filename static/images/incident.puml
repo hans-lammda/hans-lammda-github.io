@@ -1,0 +1,34 @@
+@startuml
+
+hide footbox
+participant "Lamm Consulting"  as LM #FFFFFF
+participant  "Myndigheten för samhällsskydd och beredskap" as MSB  #FFFFFF
+participant  "Svenska kraftnät" as SVK  #FFFFFF
+participant  "Energimyndigheten" as EM #FFFFFF
+participant  "Post och Telestyrelsen" as PTS #FFFFFF
+participant  "Research institute RISE" as RISE #FFFFFF
+participant  "KTH" as KTH #FFFFFF
+
+LM -> LM:  2024 03 01\n\nPrototyp för energi gateway\nNoterar svaghet i säkerhet
+LM -> MSB: 2024 04 30 
+note right #FFFFFF : Fråga: Jag har funnit en svaghet \n\nSvar: Kontakta respektive tillsynsmyndighet\n
+LM -> LM:  2024 06 10 \nBygga upp domänkunskap runt problemet\nCybersäkerhetskurs hos Svenska Kraftnät
+LM -> SVK: 2024 06 10 
+note right #FFFFFF : Fråga: Jag har funnit en svaghet \n\nSvar: Vi är inte tillsynsmyndighet\n\nHänvisning: Energimyndigheten
+LM -> EM: 2024 06 28 
+note right #FFFFFF : Fråga: Jag har funnit en svaghet
+LM -> MSB: 2024 09 12 
+note right #FFFFFF : Ansökan: Beskriver problem i ansökan\n\nSöker 240.000 för att utveckla en lösning\n\nAvslag meddelas: 2024 12 10
+LM -> PTS: 2024 09 19 
+note right #FFFFFF : Fråga: Jag har funnit en svaghet\n\nHänvisning: Vi kan stödja, men ansvaret är Energimyndighetens
+LM -> EM: 2024 10 16 
+note right #FFFFFF : Fråga: Påminnelse\n\nHänvisning: MSB Cert-SE
+LM -> LM: 2024 11 21 Lösning påbörjas\npatentansökan lämnas in
+LM -> MSB: 2024 11 28 
+note right #FFFFFF : Fråga: Jag har funnit en svaghet\n\nÄrende CERT-SE #481380\n\nHänvisning: MSB ncc-se@msb.se
+LM -> RISE: 2024 12 13 
+note right #FFFFFF : Fråga: Jag har funnit en svaghet\n\nRISE har rapporterat samma problem för värmepumpar\n\nSvar: Vi återkommer
+LM -> KTH: 2025 01 09 
+note right #FFFFFF : Överlämnar dator och rapport\n\nKTH föreslår master thesis\n\nFinansiering behövs
+@enduml
+
