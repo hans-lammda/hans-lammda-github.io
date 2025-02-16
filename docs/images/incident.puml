@@ -8,6 +8,7 @@ participant  "Energimyndigheten" as EM #FFFFFF
 participant  "Post och Telestyrelsen" as PTS #FFFFFF
 participant  "Research institute RISE" as RISE #FFFFFF
 participant  "KTH" as KTH #FFFFFF
+participant  "Skatteverket" as SKV #FFFFFF
 
 LM -> LM:  2024 03 01\n\nPrototyp för energi gateway\nNoterar svaghet i säkerhet
 LM -> MSB: 2024 04 30 
@@ -30,5 +31,7 @@ LM -> RISE: 2024 12 13
 note right #FFFFFF : Fråga: Jag har funnit en svaghet\n\nRISE har rapporterat samma problem för värmepumpar\n\nSvar: Vi återkommer
 LM -> KTH: 2025 01 09 
 note right #FFFFFF : Överlämnar dator och rapport\n\nKTH föreslår master thesis\n\nFinansiering behövs
+LM -> SKV: 2025 02 16 
+note right #FFFFFF : Önskemål: Betinga skattereduktion av att\nprodukter riktade mot konsument\nuppfyller hög cybersäkerhet
 @enduml
 
