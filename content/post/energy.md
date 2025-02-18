@@ -37,8 +37,11 @@ menu = "main"
     <td colspan="2" style="border-top: 2px solid grey;"></td>
   </tr>
   <tr>
-    <td rowspan="6"><A HREF="https://www.nato.int/cps/en/natohq/topics_132722.htm">Cybersecurity</a> </td>
+    <td rowspan="8"><A HREF="https://www.nato.int/cps/en/natohq/topics_132722.htm">Cybersecurity</a> </td>
     <td><A HREF="/documents/CfCs_Rapport_Cyberhot-mot-elsystemet.pdf">RISE cybersecurity report on devices related to Energy Grid March 2023</a></td>
+  </tr>
+  <tr>
+    <td><A HREF="/documents/remiss18.pdf">Response to SOU 2024:18, Internal threats and dual-use</a></td>
   </tr>
   <tr>
     <td><A HREF="/documents/svk.pdf">Svenska Kraftnät identifies potential problems with aggregated resources 2024 05 22</a></td>
@@ -48,6 +51,9 @@ menu = "main"
   </tr>
   <tr>
     <td><A HREF="/documents/avslag.pdf">Application declined 2024 12 10 </a></td>
+  </tr>
+  <tr>
+    <td><A HREF="/documents/Skatteverket.pdf">Request to add cybersecurity to FCR-services</a></td>
   </tr>
   <tr>
     <td><A HREF="/images/incident.png">Contact with authorities</a></td>

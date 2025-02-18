@@ -2,20 +2,37 @@
 
 hide footbox
 participant "Lamm Consulting"  as LM #FFFFFF
-participant  "Myndigheten för samhällsskydd och beredskap" as MSB  #FFFFFF
-participant  "Svenska kraftnät" as SVK  #FFFFFF
+participant  "RISE" as RISE #FFFFFF
+participant  "Vinnova" as VINN  #FFFFFF
+participant  "MSB" as MSB  #FFFFFF
+participant  "CERT-SE" as CERT #FFFFFF
+participant  "Cybernode" as CYBER  #FFFFFF
+participant  "NCC-SE" as NCC #FFFFFF
+participant  "SVK" as SVK  #FFFFFF
 participant  "Energimyndigheten" as EM #FFFFFF
-participant  "Post och Telestyrelsen" as PTS #FFFFFF
-participant  "Research institute RISE" as RISE #FFFFFF
+participant  "PTS" as PTS #FFFFFF
 participant  "KTH" as KTH #FFFFFF
-participant  "Skatteverket" as SKV #FFFFFF
+participant  "SKV" as SKV #FFFFFF
+participant  "Försvarsdepart" as FORSVAR #FFFFFF
+participant  "NCSC" as NCSC #FFFFFF
+participant  "PRV" as PRV #FFFFFF
 
-LM -> LM:  2024 03 01\n\nPrototyp för energi gateway\nNoterar svaghet i säkerhet
+LM -> CYBER:  2022 02 28
+note right #FFFFFF : Aktiverar och avgränsar en vilande arbetsgrupp\nSäkra leveranskedjor
+CYBER -> KTH: 2022 03 08 
+note right #FFFFFF : Håller föreläsning hos chains.proj.kth.se\nÖnskemål om engelska i arbetsgruppen
+CYBER -> LM:  2023 08 28
+note right #FFFFFF : Förfrågan från kund utanför Sverige att delta i gruppen\nÖverlämning av arbetsgruppen\nStartar projekt utanför Cybernoden
+LM -> VINN: 2024 03 13 
+note right #FFFFFF : Ansökan: säker bootloader\n\nAvslag: 2026 05 31 
 LM -> MSB: 2024 04 30 
 note right #FFFFFF : Fråga: Jag har funnit en svaghet \n\nSvar: Kontakta respektive tillsynsmyndighet\n
-LM -> LM:  2024 06 10 \nBygga upp domänkunskap runt problemet\nCybersäkerhetskurs hos Svenska Kraftnät
+LM -> FORSVAR: 2024 05 27 
+note right #FFFFFF : Skrev ett eget yttrande avseende NIS2 betänkandet\nTema Dual-Use, Energi samt Inre hot
+LM -> SVK:  2024 06 10 
+note right #FFFFFF : Cybersäkerhetskurs hos Svenska Kraftnät 
 LM -> SVK: 2024 06 10 
-note right #FFFFFF : Fråga: Jag har funnit en svaghet \n\nSvar: Vi är inte tillsynsmyndighet\n\nHänvisning: Energimyndigheten
+note right #FFFFFF : Fråga: Jag har funnit en svaghet \n\nSvar: Oklart om vi kan hjälpa\n\nHänvisning: Energimyndigheten\n\nInformell förfrågan under kursen
 LM -> EM: 2024 06 28 
 note right #FFFFFF : Fråga: Jag har funnit en svaghet
 LM -> MSB: 2024 09 12 
@@ -23,9 +40,10 @@ note right #FFFFFF : Ansökan: Beskriver problem i ansökan\n\nSöker 240.000 f�
 LM -> PTS: 2024 09 19 
 note right #FFFFFF : Fråga: Jag har funnit en svaghet\n\nHänvisning: Vi kan stödja, men ansvaret är Energimyndighetens
 LM -> EM: 2024 10 16 
-note right #FFFFFF : Fråga: Påminnelse\n\nHänvisning: MSB Cert-SE
-LM -> LM: 2024 11 21 Lösning påbörjas\npatentansökan lämnas in
-LM -> MSB: 2024 11 28 
+note right #FFFFFF : Fråga: Påminnelse\n\nHänvisning: CERT-SE
+LM -> PRV: 2024 11 21 
+note right #FFFFFF : Patentansökan lämnas in
+LM -> CERT: 2024 11 28 
 note right #FFFFFF : Fråga: Jag har funnit en svaghet\n\nÄrende CERT-SE #481380\n\nHänvisning: MSB ncc-se@msb.se
 LM -> RISE: 2024 12 13 
 note right #FFFFFF : Fråga: Jag har funnit en svaghet\n\nRISE har rapporterat samma problem för värmepumpar\n\nSvar: Vi återkommer
@@ -33,5 +51,9 @@ LM -> KTH: 2025 01 09
 note right #FFFFFF : Överlämnar dator och rapport\n\nKTH föreslår master thesis\n\nFinansiering behövs
 LM -> SKV: 2025 02 16 
 note right #FFFFFF : Önskemål: Betinga skattereduktion av att\nprodukter riktade mot konsument\nuppfyller hög cybersäkerhet
+LM -> NCC: 2025 02 18 
+note right #FFFFFF :Fråga: Jag har funnit en svaghet\nSvar: Kolla våra utlysningar 
+LM -> NCSC: 2025 02 18 
+note right #FFFFFF :Fråga: Jag har funnit en svaghet 
 @enduml
 
