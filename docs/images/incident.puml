@@ -17,12 +17,16 @@ participant  "Försvarsdepart" as FORSVAR #FFFFFF
 participant  "NCSC" as NCSC #FFFFFF
 participant  "PRV" as PRV #FFFFFF
 
+LM -> LM:  Consulting 
+note right #FFFFFF : Customer approved to publish project as open source\nbomresolver.io 
 LM -> CYBER:  2022 02 28
 note right #FFFFFF : Aktiverar och avgränsar en vilande arbetsgrupp\nSäkra leveranskedjor
 CYBER -> KTH: 2022 03 08 
-note right #FFFFFF : Håller föreläsning hos chains.proj.kth.se\nÖnskemål om engelska i arbetsgruppen
+note right #FFFFFF : Håller föreläsning hos chains.proj.kth.se\n\nbomresolver.io FOSSDEM 2022\n\nÖnskemål om engelska i arbetsgruppen
+LM -> LM:  2023 08 07
+note right #FFFFFF : Förfrågan från kund utanför Sverige att delta i gruppen\nIngår sekretess avtal med kund\nKravställning gateway för energi
 CYBER -> LM:  2023 08 28
-note right #FFFFFF : Förfrågan från kund utanför Sverige att delta i gruppen\nÖverlämning av arbetsgruppen\nStartar projekt utanför Cybernoden
+note right #FFFFFF : Överlämning av arbetsgruppen till ny gruppledare
 LM -> VINN: 2024 03 13 
 note right #FFFFFF : Ansökan: säker bootloader\n\nAvslag: 2026 05 31 
 LM -> MSB: 2024 04 30 
