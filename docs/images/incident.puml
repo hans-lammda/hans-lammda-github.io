@@ -61,5 +61,7 @@ LM -> NCSC: 2025 02 18
 note right #FFFFFF :Fråga: Jag har funnit en svaghet 
 LM -> VINN: 2025 02 19 
 note right #FFFFFF : Behov av reaktiva åtgärder 
+LM -> CYBER:  2022 02 19
+note right #FFFFFF : Jag fick berätta om problemet på cybernodens medlemsmöte
 @enduml
 
