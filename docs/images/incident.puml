@@ -59,5 +59,7 @@ LM -> NCC: 2025 02 18
 note right #FFFFFF :Fråga: Jag har funnit en svaghet\nSvar: Kolla våra utlysningar 
 LM -> NCSC: 2025 02 18 
 note right #FFFFFF :Fråga: Jag har funnit en svaghet 
+LM -> VINN: 2025 02 19 
+note right #FFFFFF : Behov av reaktiva åtgärder 
 @enduml
 
